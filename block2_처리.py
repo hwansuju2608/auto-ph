@@ -1,0 +1,85 @@
+"""처리 블록: 1_자료.json을 읽어 Gemini로 한줄소개·설명·태그를 한국어로 번역하고 한국 유사 서비스 코멘트를 붙여 output/2_처리.json에 남긴다."""
+import json, os, time, urllib.request, urllib.error
+from common import env, log, OUT
+
+API = "https://generativelanguage.googleapis.com/v1beta"
+
+PROMPT = """아래는 Product Hunt 상위 서비스 목록(JSON)입니다.
+각 서비스마다 다음을 한국어로 써 주세요.
+- 한줄소개_ko: "한줄소개"를 자연스러운 한국어로 번역
+- 설명_ko: "설명"을 자연스러운 한국어로 번역 (설명이 비어 있으면 빈 문자열)
+- 태그_ko: "태그" 각각을 한국어로 번역한 배열 (순서 유지)
+- 한국코멘트: 한국 시장 관점의 한 문장. 아래 셋 중 하나로 시작하세요.
+  "[있음]" 같은 분야의 한국 서비스를 확실히 아는 경우 — 실제로 아는 이름만 1~2개 (예: 전자서명 → 모두싸인)
+  "[드묾]" 같은 분야 한국 서비스가 떠오르지 않는 경우 — 어떤 분야인지와 한국에서 기회가 될 만한 점을 짧게
+  "[모름]" 하드웨어·자동차처럼 비교가 어려운 경우 — 이유를 짧게
+  확실히 모르는 서비스 이름은 절대 지어내지 마세요.
+번역에 없는 내용을 덧붙이지 마세요.
+반드시 JSON 배열로만 답하세요: [{"번호":1,"한줄소개_ko":"...","설명_ko":"...","태그_ko":["..."],"한국코멘트":"..."}, ...]
+
+목록:
+"""
+
+def call(key, model, text):
+    """Gemini에 한 번 묻는다."""
+    body = json.dumps({"contents": [{"parts": [{"text": text}]}],
+                       "generationConfig": {"responseMimeType": "application/json"}}).encode()
+    req = urllib.request.Request(f"{API}/models/{model}:generateContent", data=body,
+        headers={"x-goog-api-key": key, "Content-Type": "application/json"})
+    with urllib.request.urlopen(req, timeout=90) as r:
+        d = json.load(r)
+    return d["candidates"][0]["content"]["parts"][0]["text"]
+
+# 무료 등급에서 쓸 수 있는 모델을 앞에서부터 차례로 시도한다.
+MODELS = ["gemini-3.5-flash", "gemini-3.8-flash"]   # 좋은 모델 먼저 (두 번까지 시도)
+LITE = "gemini-flash-lite-latest"                    # 그래도 안 되면 마지막 수단
+FIELDS = ["번호", "이름", "한줄소개", "설명", "태그"]
+
+def main():
+    key = env("GEMINI_API_KEY")
+    if not key:
+        log("처리", False, ".env에 GEMINI_API_KEY가 비어 있음"); return False
+    src = os.path.join(OUT, "1_자료.json")
+    if not os.path.exists(src):
+        log("처리", False, "1_자료.json이 없음 (자료 블록부터)"); return False
+    data = json.load(open(src, encoding="utf-8"))
+    used, res = set(), {}
+    days = sorted({it["날짜"] for it in data["목록"]})
+    for day in days:                       # 날짜별로 나눠 보내 응답을 짧게
+        part = [{k: it[k] for k in FIELDS} for it in data["목록"] if it["날짜"] == day]
+        text, errs = None, []
+        for attempt in range(3):
+            cand = MODELS if attempt < 2 else [LITE]
+            for model in cand:
+                try:
+                    text = call(key, model, PROMPT + json.dumps(part, ensure_ascii=False)); break
+                except urllib.error.HTTPError as e:
+                    errs.append(f"{model}: HTTP {e.code}")
+                except Exception as e:
+                    errs.append(f"{model}: {e}")
+            if text:
+                break
+            time.sleep(30)
+        if not text:
+            log("처리", False, f"Gemini 실패 ({day}): " + ", ".join(errs)); return False
+        try:
+            for r in json.loads(text):
+                res[int(r["번호"])] = r
+        except Exception as e:
+            log("처리", False, f"Gemini 답을 읽지 못함 ({day}): {e}"); return False
+        used.add(model)
+    for it in data["목록"]:
+        r = res.get(it["번호"], {})
+        it["한줄소개_ko"] = r.get("한줄소개_ko", "")
+        it["설명_ko"] = r.get("설명_ko", "")
+        it["태그_ko"] = r.get("태그_ko", [])
+        it["한국코멘트"] = r.get("한국코멘트", "(코멘트 없음)")
+    model = ", ".join(sorted(used))
+    data["모델"] = model
+    with open(os.path.join(OUT, "2_처리.json"), "w", encoding="utf-8") as f:
+        json.dump(data, f, ensure_ascii=False, indent=2)
+    log("처리", True, f"{len(data['목록'])}개 번역·코멘트 붙임 ({model})")
+    return True
+
+if __name__ == "__main__":
+    main()
