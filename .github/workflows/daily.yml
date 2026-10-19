@@ -1,0 +1,32 @@
+# 평일 아침 Product Hunt 요약 메일 (깃허브 컴퓨터가 대신 실행)
+name: Auto_PH 매일 아침
+
+on:
+  schedule:
+    # 깃허브 시계는 한국보다 9시간 느림(UTC). 일~목 21:45 UTC = 한국 월~금 06:45
+    - cron: "45 21 * * 0-4"
+  workflow_dispatch:
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 자료 → 처리 → 결과
+        env:
+          PYTHONUTF8: "1"
+          PH_TOKEN: ${{ secrets.PH_TOKEN }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          GMAIL_ADDRESS: ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
+        run: python run_all.py
+      - name: 결과 파일 남기기
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: output
+          path: output/
