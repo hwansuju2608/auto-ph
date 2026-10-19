@@ -5,34 +5,7 @@ from email.mime.text import MIMEText
 from email.header import Header
 from common import env, log, OUT
 
-def build(data):
-    rows = []
-    def pair(ko, en, size):
-        if not (ko or en):
-            return ""
-        return (f'<div style="font-size:{size}px;margin-top:6px">{html.escape(ko or en)}</div>'
-                f'<div style="font-size:11px;color:#9b9a97;margin-top:1px">{html.escape(en)}</div>')
-    prev = None
-    for it in data["목록"]:
-        if it["날짜"] != prev:
-            prev = it["날짜"]
-            rows.append(f'<div style="background:#000;color:#76b900;font-weight:700;font-size:13px;padding:6px 12px;margin:18px 0 10px">■ {prev} (미국 서부)</div>')
-        tags_ko = " · ".join(it.get("태그_ko") or it["태그"])
-        tags_en = " · ".join(it["태그"])
-        rows.append(f"""
-<div style="border:1px solid #e9e9e7;border-radius:8px;padding:14px 16px;margin:0 0 12px">
-  <div style="font-size:16px;font-weight:700">{it['순위']}. <a href="{html.escape(it['링크'])}" style="color:#37352f">{html.escape(it['이름'])}</a>
-    <span style="font-size:12px;color:#787774;font-weight:400"> ▲ {it['추천수']}</span></div>
-  {pair(it.get('한줄소개_ko'), it['한줄소개'], 14)}
-  {pair(it.get('설명_ko'), it.get('설명', ''), 13)}
-  <div style="font-size:13px;background:#fdecc8;border-radius:4px;padding:4px 8px;display:inline-block;margin-top:8px">🇰🇷 {html.escape(it['한국코멘트'])}</div>
-  {pair(tags_ko, tags_en, 12)}
-</div>""")
-    return f"""<div style="font-family:'Malgun Gothic',sans-serif;max-width:640px;color:#37352f">
-<h2 style="margin:0 0 4px">Product Hunt 날짜별 상위 10</h2>
-<div style="color:#9b9a97;font-size:12px;margin-bottom:16px">미국 서부 기준 {' · '.join(data['날짜들'])} · 한국 코멘트는 AI 추정(참고용)</div>
-{''.join(rows)}
-<div style="color:#9b9a97;font-size:11px">Auto_PH · 개인 용도</div></div>"""
+from mail_design_superhuman import build   # 메일 디자인: Superhuman 스타일 (mail_design_superhuman.py)
 
 def main(preview=False):
     src = os.path.join(OUT, "2_처리.json")
