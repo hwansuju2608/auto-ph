@@ -8,11 +8,12 @@ INDIGO = "#1b1938"; DEEP = "#0e0c1f"; VIOLET = "#c9b4fa"; TEAL = "#0e3030"; TEAL
 INK = "#292827"; MUTE = "#73706d"; FAINT = "#9a9794"; LINE = "#e8e4dd"; LINE_D = "#3f3a52"
 SOFT = "#fafaf8"; ON_D = "#bcbac9"
 FONT = "'Malgun Gothic','맑은 고딕',Arial,sans-serif"
+NOSP = "text-autospace:none;"  # Outlook(워드)이 숫자와 한글 사이에 자동으로 넣는 간격 끄기
 TBL = 'role="presentation" cellpadding="0" cellspacing="0" border="0"'
 
 def _t(css, content, extra=""):
     """글꼴을 항상 같이 넣는 td."""
-    return f'<td {extra} style="font-family:{FONT};mso-line-height-rule:exactly;{css}">{content}</td>'
+    return f'<td {extra} style="font-family:{FONT};mso-line-height-rule:exactly;{NOSP}{css}">{content}</td>'
 
 def _tag(c):
     for t in ("[드묾]", "[있음]", "[모름]"):
@@ -20,15 +21,24 @@ def _tag(c):
             return t[1:-1], c[len(t):].strip()
     return "", c
 
+def _box(bg, bd, css, label, radius):
+    """테두리 있는 작은 상자. Outlook은 CSS 테두리를 칸 아래에 따로 그어 줄이 생기므로,
+    테두리 색 칸(1px 여백) 안에 배경색 칸을 넣는 방식으로 만든다."""
+    if bd == bg:
+        return (f'<table {TBL} style="display:inline-table"><tr>'
+                + _t(f"background:{bg};{css};border-radius:{radius}", label, f'bgcolor="{bg}"') + '</tr></table>')
+    inner = (f'<table {TBL}><tr>' + _t(f"background:{bg};{css};border-radius:{radius}", label, f'bgcolor="{bg}"') + '</tr></table>')
+    return (f'<table {TBL} style="display:inline-table"><tr>'
+            f'<td bgcolor="{bd}" style="background:{bd};padding:1px;border-radius:{radius}">{inner}</td></tr></table>')
+
 def _chip(t, n=None, dark=False):
     """배지: 작은 표 한 칸 (Outlook에서도 배경·여백 유지)."""
     bg, fg, bd = {"드묾": (VIOLET, INDIGO, VIOLET),
                   "있음": ((LINE_D, "#ffffff", LINE_D) if dark else (INDIGO, "#ffffff", INDIGO)),
                   "모름": ((INDIGO, ON_D, LINE_D) if dark else ("#ffffff", MUTE, LINE))}.get(t, ("#ffffff", MUTE, LINE))
     label = (t or "-") + (f" {n}" if n is not None else "")
-    return (f'<table {TBL} style="display:inline-table"><tr>'
-            + _t(f"background:{bg};border:1px solid {bd};color:{fg};font-size:12px;font-weight:bold;line-height:16px;padding:4px 10px;border-radius:4px;white-space:nowrap", label, f'bgcolor="{bg}"')
-            + '</tr></table>')
+    pad = "4px 10px" if bd == bg else "3px 9px"
+    return _box(bg, bd, f"color:{fg};font-size:12px;font-weight:bold;line-height:16px;padding:{pad};white-space:nowrap", label, "4px")
 
 def _chips(cnt, dark):
     cells = "".join(f'<td style="padding-right:8px">{_chip(k, cnt[k], dark)}</td>' for k in ("드묾", "있음", "모름"))
@@ -54,7 +64,7 @@ def _card(it, i, featured):
     inner = (f'<table {TBL} width="100%">'
              + _row(_t("padding:0", head))
              + _row(_t(f"padding-top:10px;font-size:22px;font-weight:bold;line-height:28px;color:{fg}",
-                       f'<a href="{e(it["링크"])}" style="color:{fg};text-decoration:none;font-family:{FONT}">{e(it["이름"])}</a>'))
+                       f'<a href="{e(it["링크"])}" style="color:{fg};text-decoration:none;font-family:{FONT};{NOSP}">{e(it["이름"])}</a>'))
              + _row(_t(f"padding-top:4px;font-size:15px;line-height:23px;color:{sub}", e(it.get("한줄소개_ko") or it["한줄소개"])))
              + _row(f'<td style="padding-top:14px"><table {TBL} width="100%"><tr>'
                     + _t(f"background:{box};color:{boxfg};font-size:14px;line-height:22px;padding:12px 14px;border-radius:8px", e(it["_c"]), f'bgcolor="{box}"')
@@ -98,13 +108,13 @@ def build(data):
     for it in items:
         if it["날짜"] != prev:
             prev = it["날짜"]
-            pill = (f'<table {TBL}><tr>' + _t(f"border:1px solid {LINE};color:{INK};font-size:13px;font-weight:bold;line-height:18px;padding:6px 14px;border-radius:9999px",
-                    f'{e(prev[5:].replace("-", "."))} · 미국 서부') + '</tr></table>')
+            pill = _box("#ffffff", LINE, f"color:{INK};font-size:13px;font-weight:bold;line-height:18px;padding:5px 13px",
+                        f'{e(prev[5:].replace("-", "."))} · 미국 서부', "9999px")
             o.append(f'<tr><td style="padding:22px 28px 6px">{pill}</td></tr>')
-        cell = (f'<a href="{e(it["링크"])}" style="font-family:{FONT};font-size:16px;font-weight:bold;color:{INK};text-decoration:none">{e(it["이름"])}</a>'
-                f'<span style="font-family:{FONT};font-size:12px;color:{FAINT}">&nbsp;▲ {it["추천수"]}</span>'
-                f'<br><span style="font-family:{FONT};font-size:14px;line-height:22px;color:{INK}">{e(it.get("한줄소개_ko") or it["한줄소개"])}</span>'
-                f'<br><span style="font-family:{FONT};font-size:13px;line-height:20px;color:{MUTE}">{e(it["_c"])}</span>')
+        cell = (f'<a href="{e(it["링크"])}" style="font-family:{FONT};{NOSP}font-size:16px;font-weight:bold;color:{INK};text-decoration:none">{e(it["이름"])}</a>'
+                f'<span style="font-family:{FONT};{NOSP}font-size:12px;color:{FAINT}">&nbsp;▲ {it["추천수"]}</span>'
+                f'<br><span style="font-family:{FONT};{NOSP}font-size:14px;line-height:22px;color:{INK}">{e(it.get("한줄소개_ko") or it["한줄소개"])}</span>'
+                f'<br><span style="font-family:{FONT};{NOSP}font-size:13px;line-height:20px;color:{MUTE}">{e(it["_c"])}</span>')
         row = (f'<table {TBL} width="100%" style="border-bottom:1px solid {LINE}"><tr>'
                + _t(f"padding:16px 0;font-size:14px;font-weight:bold;line-height:20px;color:{FAINT};vertical-align:top", f'{it["순위"]:02d}', 'width="30" valign="top"')
                + _t("padding:16px 12px 16px 0;font-size:14px;line-height:22px;vertical-align:top", cell, 'valign="top"')
