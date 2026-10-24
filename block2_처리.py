@@ -1,5 +1,5 @@
 """처리 블록: 1_자료.json을 읽어 Gemini로 한줄소개·설명·태그를 한국어로 번역하고 한국 유사 서비스 코멘트를 붙여 output/2_처리.json에 남긴다."""
-import json, os, time, urllib.request, urllib.error
+import json, os, re, time, urllib.request, urllib.error
 from common import env, log, OUT
 
 API = "https://generativelanguage.googleapis.com/v1beta"
@@ -39,6 +39,16 @@ def call(key, model, text):
         d = json.load(r)
     return d["candidates"][0]["content"]["parts"][0]["text"]
 
+def parse(text):
+    """Gemini 답(JSON)을 읽는다. 끝에 쉼표가 남는 등 살짝 깨진 경우 고쳐서 한 번 더 읽는다."""
+    try:
+        rows = json.loads(text)
+    except Exception:
+        rows = json.loads(re.sub(r",\s*([\]}])", r"\1", text))
+    if not isinstance(rows, list):
+        raise ValueError("답이 목록(JSON 배열)이 아님")
+    return rows
+
 # 무료 등급에서 쓸 수 있는 모델을 앞에서부터 차례로 시도한다.
 MODELS = ["gemini-3.5-flash", "gemini-3.8-flash"]   # 좋은 모델 먼저 (두 번까지 시도)
 LITE = "gemini-flash-lite-latest"                    # 그래도 안 되면 마지막 수단
@@ -56,26 +66,25 @@ def main():
     days = sorted({it["날짜"] for it in data["목록"]})
     for day in days:                       # 날짜별로 나눠 보내 응답을 짧게
         part = [{k: it.get(k, "") for k in FIELDS} for it in data["목록"] if it["날짜"] == day]
-        text, errs = None, []
-        for attempt in range(3):
+        rows, errs = None, []
+        for attempt in range(4):           # 답이 깨져 있어도 다시 물어본다 (마지막 두 번은 가벼운 모델)
             cand = MODELS if attempt < 2 else [LITE]
             for model in cand:
                 try:
-                    text = call(key, model, PROMPT + json.dumps(part, ensure_ascii=False)); break
+                    rows = parse(call(key, model, PROMPT + json.dumps(part, ensure_ascii=False))); break
                 except urllib.error.HTTPError as e:
                     errs.append(f"{model}: HTTP {e.code}")
                 except Exception as e:
-                    errs.append(f"{model}: {e}")
-            if text:
+                    errs.append(f"{model}: 답을 읽지 못함 {e}")
+            if rows is not None:
                 break
             time.sleep(30)
-        if not text:
+        if rows is None:
             log("처리", False, f"Gemini 실패 ({day}): " + ", ".join(errs)); return False
-        try:
-            for r in json.loads(text):
-                res[int(r["번호"])] = r
-        except Exception as e:
-            log("처리", False, f"Gemini 답을 읽지 못함 ({day}): {e}"); return False
+        if errs:
+            log("처리", True, f"{day} 재시도 끝에 성공 ({model}) — 앞선 실패: " + ", ".join(errs)[:300])
+        for r in rows:
+            res[int(r["번호"])] = r
         used.add(model)
     for it in data["목록"]:
         r = res.get(it["번호"], {})
