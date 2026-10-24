@@ -3,6 +3,7 @@ Outlook 클래식은 메일을 워드 엔진으로 그려서 div 여백·줄간�
 그래서: 모든 칸을 표(td)로 만들고, 여백은 td padding으로, 글꼴은 td마다 맑은 고딕을 먼저 지정한다.
 둥근 모서리·빛 번짐은 Outlook 클래식에서만 각지고 단색으로 보인다(다른 메일 앱은 그대로)."""
 import html
+from block4_페이지 import detail_url   # 이름을 누르면 한국어 상세 페이지로
 
 INDIGO = "#1b1938"; DEEP = "#0e0c1f"; VIOLET = "#c9b4fa"; TEAL = "#0e3030"; TEAL2 = "#155555"
 INK = "#292827"; MUTE = "#73706d"; FAINT = "#9a9794"; LINE = "#e8e4dd"; LINE_D = "#3f3a52"
@@ -47,6 +48,22 @@ def _chips(cnt, dark):
 def _row(content_td):
     return f"<tr>{content_td}</tr>"
 
+def _what(it):
+    """무엇을 하는 서비스인지 쉬운 설명. 없으면 한 줄 소개로."""
+    return it.get("무엇_ko") or it.get("한줄소개_ko") or it["한줄소개"]
+
+def _feat_rows(it, fg, sub):
+    """주요 기능·가격 줄 (있을 때만)."""
+    e = html.escape
+    out = ""
+    feats = [f for f in (it.get("기능_ko") or []) if f][:3]
+    if feats:
+        lines = "<br>".join(f"✓&nbsp; {e(f)}" for f in feats)
+        out += _row(_t(f"padding-top:10px;font-size:14px;line-height:22px;color:{fg}", lines))
+    if it.get("가격_ko"):
+        out += _row(_t(f"padding-top:8px;font-size:13px;line-height:20px;color:{sub}", "가격 · " + e(it["가격_ko"])))
+    return out
+
 def _card(it, i, featured):
     e = html.escape
     tags = " · ".join(it.get("태그_ko") or it["태그"])
@@ -64,12 +81,15 @@ def _card(it, i, featured):
     inner = (f'<table {TBL} width="100%">'
              + _row(_t("padding:0", head))
              + _row(_t(f"padding-top:10px;font-size:22px;font-weight:bold;line-height:28px;color:{fg}",
-                       f'<a href="{e(it["링크"])}" style="color:{fg};text-decoration:none;font-family:{FONT};{NOSP}">{e(it["이름"])}</a>'))
-             + _row(_t(f"padding-top:4px;font-size:15px;line-height:23px;color:{sub}", e(it.get("한줄소개_ko") or it["한줄소개"])))
+                       f'<a href="{e(detail_url(it))}" style="color:{fg};text-decoration:none;font-family:{FONT};{NOSP}">{e(it["이름"])}</a>'))
+             + _row(_t(f"padding-top:6px;font-size:15px;line-height:24px;color:{fg}", e(_what(it))))
+             + _feat_rows(it, fg, sub)
              + _row(f'<td style="padding-top:14px"><table {TBL} width="100%"><tr>'
                     + _t(f"background:{box};color:{boxfg};font-size:14px;line-height:22px;padding:12px 14px;border-radius:8px", e(it["_c"]), f'bgcolor="{box}"')
                     + '</tr></table></td>')
              + _row(_t(f"padding-top:12px;font-size:12px;line-height:18px;color:{sub}", e(tags)))
+             + _row(_t(f"padding-top:14px;font-size:14px;font-weight:bold;line-height:20px",
+                       f'<a href="{e(detail_url(it))}" style="color:{fg};text-decoration:underline;font-family:{FONT};{NOSP}">한국어로 자세히 보기 →</a>'))
              + '</table>')
     return (f'<tr><td style="padding:8px 28px"><table {TBL} width="100%" style="border-collapse:separate"><tr>'
             + _t(f"background:{bg};border:1px solid {bd};border-radius:12px;padding:24px 26px", inner, f'bgcolor="{bg}"')
@@ -111,9 +131,9 @@ def build(data):
             pill = _box("#ffffff", LINE, f"color:{INK};font-size:13px;font-weight:bold;line-height:18px;padding:5px 13px",
                         f'{e(prev[5:].replace("-", "."))} · 미국 서부', "9999px")
             o.append(f'<tr><td style="padding:22px 28px 6px">{pill}</td></tr>')
-        cell = (f'<a href="{e(it["링크"])}" style="font-family:{FONT};{NOSP}font-size:16px;font-weight:bold;color:{INK};text-decoration:none">{e(it["이름"])}</a>'
+        cell = (f'<a href="{e(detail_url(it))}" style="font-family:{FONT};{NOSP}font-size:16px;font-weight:bold;color:{INK};text-decoration:none">{e(it["이름"])}</a>'
                 f'<span style="font-family:{FONT};{NOSP}font-size:12px;color:{FAINT}">&nbsp;▲ {it["추천수"]}</span>'
-                f'<br><span style="font-family:{FONT};{NOSP}font-size:14px;line-height:22px;color:{INK}">{e(it.get("한줄소개_ko") or it["한줄소개"])}</span>'
+                f'<br><span style="font-family:{FONT};{NOSP}font-size:14px;line-height:22px;color:{INK}">{e(_what(it))}</span>'
                 f'<br><span style="font-family:{FONT};{NOSP}font-size:13px;line-height:20px;color:{MUTE}">{e(it["_c"])}</span>')
         row = (f'<table {TBL} width="100%" style="border-bottom:1px solid {LINE}"><tr>'
                + _t(f"padding:16px 0;font-size:14px;font-weight:bold;line-height:20px;color:{FAINT};vertical-align:top", f'{it["순위"]:02d}', 'width="30" valign="top"')
