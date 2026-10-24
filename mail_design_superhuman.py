@@ -145,7 +145,7 @@ def build(data):
     o.append('<tr><td style="padding:36px 0 0;font-size:1px;line-height:1px">&nbsp;</td></tr>')
     foot = (f'<table {TBL} width="100%">'
             + _row(_t("font-size:21px;font-weight:bold;line-height:28px;color:#ffffff", "오늘 고를 아이템이 있나요?"))
-            + _row(_t("padding-top:8px;font-size:14px;line-height:22px;color:#a9c6c6", "이름을 누르면 Product Hunt 원문으로 이동합니다. 한국 코멘트는 AI 추정(참고용)입니다."))
+            + _row(_t("padding-top:8px;font-size:14px;line-height:22px;color:#a9c6c6", "이름을 누르면 한국어 상세 페이지로 이동합니다. 설명·한국 코멘트는 AI 추정(참고용)입니다."))
             + _row(_t(f"padding-top:16px;font-size:12px;line-height:18px;color:#7fa5a5;border-top:1px solid {TEAL2}", "Auto_PH · 개인 용도"))
             + '</table>')
     o.append('<tr>' + _t(f"background:{TEAL};padding:34px 32px;border-radius:0 0 16px 16px", foot, f'bgcolor="{TEAL}"') + '</tr>')
