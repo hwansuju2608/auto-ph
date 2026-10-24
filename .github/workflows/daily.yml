@@ -31,6 +31,7 @@ jobs:
       - name: 한국어 페이지 저장 (깃허브 Pages로 공개됨)
         if: always()
         run: |
+          [ -d docs ] || exit 0   # 앞 단계가 멈춰 페이지가 없으면 저장할 것도 없음
           git config user.name "Auto_PH"
           git config user.email "auto-ph@users.noreply.github.com"
           git add docs
