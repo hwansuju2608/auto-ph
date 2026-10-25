@@ -1,0 +1,501 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PH 한국어 브리핑 10.22 · 10.23 · 10.24</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{--indigo:#1b1938;--deep:#0e0c1f;--violet:#c9b4fa;--ink:#292827;--mute:#73706d;--faint:#9a9794;
+--line:#e8e4dd;--soft:#fafaf8;--teal:#0e3030;--ok:#1f7a4d;--warn:#a5532a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--soft);color:var(--ink);font-family:Pretendard,"Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header{background:radial-gradient(circle at 85% 0%,#8f7ad6 0%,#4a3f8f 22%,var(--indigo) 55%,var(--deep) 100%);color:#fff;padding:44px 0 36px}
+.eyebrow{font-size:13px;font-weight:600;color:var(--violet)}
+h1{font-size:34px;line-height:1.2;margin:12px 0 10px;letter-spacing:-.5px}
+h1 span{color:var(--violet)}
+.lead{color:#bcbac9;font-size:15px;margin:0}
+nav.toc{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}
+nav.toc a{font-size:13px;text-decoration:none;color:#fff;border:1px solid #3f3a52;border-radius:999px;padding:4px 11px}
+nav.toc a:hover{background:#3f3a52}
+.day{margin:34px 0 4px;font-size:13px;font-weight:700;color:var(--mute)}
+article{background:#fff;border:1px solid var(--line);border-radius:16px;margin:14px 0 22px;overflow:hidden;scroll-margin-top:12px}
+article:target{box-shadow:0 0 0 3px var(--violet)}
+.shots{display:flex;gap:6px;overflow-x:auto;background:var(--soft);padding:10px;scroll-snap-type:x mandatory}
+.shots img{height:220px;width:auto;border-radius:10px;scroll-snap-align:start;flex:none;background:#eee}
+.body{padding:22px 24px 24px}
+.meta{font-size:13px;color:var(--mute);font-weight:600;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
+.chip{display:inline-block;font-size:12px;font-weight:700;padding:2px 9px;border-radius:5px}
+.c-드묾{background:var(--violet);color:var(--indigo)}.c-있음{background:var(--indigo);color:#fff}.c-모름{border:1px solid var(--line);color:var(--mute)}
+h2{font-size:24px;margin:8px 0 6px;letter-spacing:-.3px}
+.what{font-size:16.5px;margin:0 0 14px}
+h3{font-size:13px;color:var(--mute);margin:18px 0 6px;font-weight:700}
+ul{margin:0;padding-left:20px}li{margin:3px 0}
+.feat li::marker{content:"✓  ";color:var(--ok)}
+.good li::marker{content:"＋ ";color:var(--ok)}.bad li::marker{content:"－ ";color:var(--warn)}
+.maker{background:var(--soft);border-radius:10px;padding:12px 14px;font-size:15px}
+.kr{background:var(--indigo);color:#fff;border-radius:10px;padding:12px 14px;font-size:15px}
+.price{font-size:14px;color:var(--mute)}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.btns a{text-decoration:none;font-size:14px;font-weight:600;padding:8px 14px;border-radius:8px;border:1px solid var(--line)}
+.btns a.main{background:var(--indigo);color:#fff;border-color:var(--indigo)}
+footer{background:var(--teal);color:#a9c6c6;font-size:13px;padding:26px 0;margin-top:30px}
+footer a{color:#fff}
+@media(max-width:560px){h1{font-size:28px}.shots img{height:170px}.body{padding:18px 16px 20px}h2{font-size:21px}}
+</style></head><body>
+<header><div class="wrap"><div class="eyebrow">Auto_PH · Product Hunt 한국어 브리핑</div>
+<h1>미국 서부 10.22 · 10.23 · 10.24<br><span>한국에 드문 것 23개</span></h1>
+<p class="lead">Product Hunt 상위 30개를 한국어로 정리했습니다. 설명·반응 요약·한국 코멘트는 AI가 쓴 참고용입니다.</p>
+<nav class="toc"><a href="#p1">DeepCell</a><a href="#p2">Claude Duet</a><a href="#p3">Doneas</a><a href="#p4">heal.dev</a><a href="#p5">Mistral Voxtral 3</a><a href="#p6">Fastlane 2.0</a><a href="#p7">CutBay</a><a href="#p8">Loom Record for agents</a><a href="#p9">Dadan</a><a href="#p10">Resend Inboxes</a><a href="#p11">Product Hunt Visual Launch Editor</a><a href="#p12">MOVO AI</a><a href="#p13">Agent Hunt</a><a href="#p14">Ovren Live Preview</a><a href="#p15">ElevenLabs Realtime</a><a href="#p16">ShogunAI</a><a href="#p17">FLUX 3 Max</a><a href="#p18">Cloudflare Clairic</a><a href="#p19">Context Engine</a><a href="#p20">Dub Startup Program</a><a href="#p21">zCAD AI</a><a href="#p22">myPip</a><a href="#p23">1Password for Agents</a><a href="#p24">AgentValley</a><a href="#p25">Canva Craft</a><a href="#p26">LinkIntel</a><a href="#p27">Many Displays</a><a href="#p28">Penta</a><a href="#p29">Byter</a><a href="#p30">How It Went</a></nav></div></header>
+<main class="wrap"><div class="day">10.22 · 미국 서부</div>
+<article id="p1">
+ <div class="shots"><img src="https://ph-files.imgix.net/82c1612f-e561-4c69-8506-4428ad92ebb6.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/5693806a-b2ab-4be3-b8da-3b6afd4005ed.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/6322af1e-c883-4e41-a38e-b91c9efe0f81.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>01위 · 10.22</span><span>▲ 추천 348</span><span>💬 댓글 77</span><span class="chip c-드묾">드묾</span></div>
+  <h2>DeepCell</h2>
+  <p class="what">금융, 기획, 제품 관리 등의 업무 담당자가 재무 모형, 보고서, 프레젠테이션 슬라이드가 서로 연결된 하나의 문서에 데이터를 입력하면, 스프레드시트와 문서 및 슬라이드가 자동으로 연동되어 수정 사항을 한 번에 반영해 준다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>자동 문서 동기화</li><li>출처 추적 및 요약 시트</li><li>오피스 파일 형식 변환</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">10년 동안 기업 생활을 하면서 스프레드시트와 슬라이드 파일이 따로 놀아 숫자를 수정할 때마다 고생했던 경험에서 출발했다. 작업을 여러 파일로 쪼개는 대신 하나의 파일 안에 데이터 모델, 보고서, 슬라이드를 기본적으로 연결해 주는 방식을 만들었다. 숫자가 자신의 의미와 출처를 스스로 기억하며, 웹 및 오피스 파일 형식으로 자유롭게 변환하고 인공지능과 실시간으로 연동되는 것이 특징이다.</div>
+  <h3>사람들 반응 · 댓글 77개</h3><p style="margin:0 0 6px">기존 엑셀 및 파워포인트 파일과의 호환성과 숫자가 스스로 논리를 기억하는 방식에 큰 기대를 보이고 있다.</p><ul class="good"><li>기존 엑셀 및 PPT 포맷으로 내보내기 가능</li><li>출처를 바로 확인할 수 있는 요약 시트 제공</li><li>숫자가 스스로 맥락을 기억하는 구조</li></ul><ul class="bad"><li>내보낸 후 외부에서 수정한 내용이 원본 파일에 다시 반영되는지 의문</li><li>내부 디자인 시스템 적용 여부 확인 필요</li></ul>
+  <h3>한국 시장</h3><div class="kr">문서와 스프레드시트, 슬라이드를 하나의 파일로 묶어 동기화하는 오피스 도구는 국내 협업 및 기획 부서에서도 업무 효율을 크게 높여줄 기회가 될 만하다.</div>
+  <p class="price" style="margin-top:12px">생산성 · 인공지능 · 비즈니스</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/deepcell?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/QQW4YFA2J3HRIM?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p2">
+ <div class="shots"><img src="https://ph-files.imgix.net/d9578145-4e5a-48d2-9147-854cdb83dd5c.jpeg?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/2e4dc6a3-ec66-417f-814b-c5d85f06189d.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/686903df-c02b-4287-a7d3-7fba4d04ead0.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>02위 · 10.22</span><span>▲ 추천 342</span><span>💬 댓글 5</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Claude Duet</h2>
+  <p class="what">사용자가 메시지로 업무를 맡기면, 클라우드 가상 컴퓨터와 연결된 앱을 이용해 인공지능 에이전트가 스스로 일한 뒤 완료되거나 결정이 필요할 때 알려준다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>클라우드 자동 작업</li><li>메시지 기반 업무 위임</li><li>상황 판단 알림</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">메이커 소개글이 별도로 제공되지 않았으나, 제품 설명을 통해 사용자와 대화하며 클라우드 환경에서 자율적으로 업무를 수행하는 에이전트 서비스임을 밝혔다.</div>
+  <h3>사람들 반응 · 댓글 5개</h3><p style="margin:0 0 6px">자연스러운 문체와 언제 연락을 안 해야 하는지 아는 뛰어난 판단력에 대해 긍정적인 반응을 보였다.</p><ul class="good"><li>로봇 같지 않은 자연스러운 문체와 어조</li><li>연락할 때와 기다릴 때를 아는 똑똑한 판단력</li></ul>
+  <h3>한국 시장</h3><div class="kr">사용자를 대신해 클라우드에서 자율적으로 업무를 처리하고 필요한 순간에만 알림을 주는 에이전트 서비스로, 국내 업무 자동화 시장에서 주목받을 수 있다.</div>
+  <p class="price" style="margin-top:12px">메시징 · 인공지능 · 봇</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/claude?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/E2X5OB7ZYY7LBL?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p3">
+ <div class="shots"><img src="https://ph-files.imgix.net/bf3e93bb-f8f0-4c7b-93ff-3a109fcaa042.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/44c223b4-aefd-41fc-aedc-5b69a0f173a2.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/d3a5ca13-4a36-400e-b44e-2c9b4850fdc7.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>03위 · 10.22</span><span>▲ 추천 267</span><span>💬 댓글 115</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Doneas</h2>
+  <p class="what">1인 창업자가 매주 계획을 세우고 다른 창업자 5명과 매일 15분씩 화상 통화를 하며 어제 한 일과 오늘 할 일을 공유해 서로의 책임감을 높여 준다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>주간 및 일일 계획</li><li>15분 화상 통화</li><li>공개 진행 상황 페이지</li></ul>
+  <p class="price">가격 · 무료+유료 (출시일 한정 쿠폰 제공)</p>
+  <h3>만든 사람의 소개</h3><div class="maker">1인 창업자로서 일관성을 유지하기 위해 겪었던 생산성 문제를 해결하고자 만들었다. 구글 미트를 통한 일일 통화에서 시작해 작업 정의와 주간 스프린트 계획 방식을 다듬어 플랫폼으로 발전시켰다. 매일 아침 다른 기업가들과 어제 한 일과 오늘 할 일을 공유하고 조언을 주고받는 일일 책임감 통화가 핵심이다.</div>
+  <h3>사람들 반응 · 댓글 115개</h3><p style="margin:0 0 6px">1인 창업자들이 꾸준히 일정을 관리하고 동기부여를 얻는 데 큰 도움이 된다며 좋은 반응을 보였다.</p><ul class="good"><li>다른 창업자들과의 실시간 진행 상황 공유</li><li>일일 계획 및 작업 마무리 습관 형성</li><li>경험 공유와 실질적인 조언 획득</li></ul><ul class="bad"><li>매일 통화에 참여하는 것이 부담스럽거나 바쁜 날에는 참여하기 어려움</li><li>내향적인 성격의 사용자에게는 통화가 다소 부담스러울 수 있음</li></ul>
+  <h3>한국 시장</h3><div class="kr">1인 개발자와 프리랜서들이 서로 매일 진행 상황을 공유하며 동기부여를 얻는 커뮤니티형 도구로, 국내 사이드 프로젝트 문화에서도 좋은 반응을 얻을 수 있다.</div>
+  <p class="price" style="margin-top:12px">생산성 · 개발자 도구</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/doneas?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/AIRL3T6NP757FV?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p4">
+ <div class="shots"><img src="https://ph-files.imgix.net/a104fe36-4bbe-41de-8625-9c6ebc487e09.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/f9aba9f4-0592-475d-9990-e4a5ec8196df.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/0344deaa-ea7d-4fa5-9cfa-4d616060e4dd.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>04위 · 10.22</span><span>▲ 추천 262</span><span>💬 댓글 38</span><span class="chip c-드묾">드묾</span></div>
+  <h2>heal.dev</h2>
+  <p class="what">개발자가 코드를 작성하면 외부 서비스가 가상으로 처리된 실행 환경에서 앱을 직접 실행하고 테스트하여 사용자가 겪을 실제 런타임 버그와 취약점을 찾아내어 재현해 준다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>프로덕션 환경 모사 샌드박스</li><li>런타임 버그 및 취약점 탐지</li><li>결함 자동 재현</li></ul>
+  <p class="price">가격 · 무료</p>
+  <h3>만든 사람의 소개</h3><div class="maker">정적 분석과 코드 리뷰는 실제 실행 환경에서의 런타임 버그나 취약점을 놓치는 경우가 많다는 문제점에서 출발했다. 코드를 단순히 스캔하는 대신 외부 의존성을 가짜로 모사한 샌드박스 환경에서 앱을 실행해 성능 문제와 버그를 선제적으로 찾아낸다. 코드를 깔끔하게 고쳐주는 리뷰 봇들과 달리 실제 사용자 경험에서 발생하는 증명된 결함을 찾아내는 것이 차별점이다.</div>
+  <h3>사람들 반응 · 댓글 38개</h3><p style="margin:0 0 6px">기존 코드 리뷰 도구가 잡지 못하는 실제 실행 환경의 버그를 찾아내 준다는 점에 대해 개발자들의 호평이 이어졌다.</p><ul class="good"><li>코드 리뷰어가 놓치는 런타임 결함 포착</li><li>실제 사용자 경로 기반의 검증된 버그 리포트</li><li>외부 서비스가 격리된 안전한 샌드박스 실행</li></ul><ul class="bad"><li>복잡한 로컬 설정을 가진 앱에서 초기 학습에 필요한 설정 과정이 궁금함</li><li>코드베이스 전체 접근 권한을 제공하는 것에 대한 보안 우려</li><li>깃허브 외에 다른 버전 관리 시스템 지원 필요</li></ul>
+  <h3>한국 시장</h3><div class="kr">자동 코드 리뷰와 테스트 자동화를 넘어 실제 운영 환경의 런타임 오류를 찾아주는 도구로, 국내 소프트웨어 개발팀의 품질 관리 프로세스에 유용할 것이다.</div>
+  <p class="price" style="margin-top:12px">개발자 도구 · 인공지능 · 바이브 코딩</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/heal-dev?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/HQTQB26MJAPQTC?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p5">
+ <div class="shots"><img src="https://ph-files.imgix.net/c38dad27-215c-4344-9b17-5f16df25d01f.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/a1285662-09b9-468f-b647-9e31489a0744.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/e8d2e06b-9be8-4c4e-b838-e6ea6efbc9bc.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>05위 · 10.22</span><span>▲ 추천 214</span><span>💬 댓글 4</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Mistral Voxtral 3</h2>
+  <p class="what">개발자가 미스트랄 API를 통해 음성을 텍스트로 바꾸거나, 텍스트를 목소리로 변환하고, 실시간 음성 에이전트를 만들 수 있는 음성 인공지능 모델들을 제공한다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>실시간 음성 인식</li><li>감정 조절 음성 합성</li><li>목소리 복제 및 화자 분리</li></ul>
+  <p class="price">가격 · 유료</p>
+  <h3>만든 사람의 소개</h3><div class="maker">음성 에이전트를 만들기 위해 음성 인식, 추론, 음성 합성을 각각 따로 조합해야 했던 기존 방식의 번거로움을 해결하고자 만들었다. 일괄 및 실시간 음성 인식 모델, 텍스트 음성 변환 모델, 그리고 모든 과정을 하나의 실시간 파이프라인으로 묶어주는 개발 키트를 하나의 패키지로 제공한다. 각 단계를 개별 모델로 교체할 수 있고 화자 분리 및 문맥 편향을 미세 조정 없이 처리할 수 있는 것이 특징이다.</div>
+  <h3>사람들 반응 · 댓글 4개</h3><p style="margin:0 0 6px">미스트랄의 새로운 음성 모델 출시에 대해 다국어 처리 성능과 실시간 대화 기능에 대한 기대감을 나타냈다.</p><ul class="good"><li>0.5초 미만의 빠른 실시간 음성 인식 속도</li><li>감정과 속도 조절이 가능한 자연스러운 음성 합성</li><li>50개 이상의 언어 및 화자 분리 지원</li></ul><ul class="bad"><li>한 문장 안에서 여러 언어를 섞어 쓸 때의 정확도 확인 필요</li></ul>
+  <h3>한국 시장</h3><div class="kr">고성능 음성 인식과 합성을 API 형태로 제공하는 모델로, 국내 음성 기반 인공지능 서비스 및 콜센터 솔루션 개발사들에게 강력한 대안이 될 수 있다.</div>
+  <p class="price" style="margin-top:12px">인공지능</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/mistral-7b?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/5EIBXLSLSKO5BV?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p6">
+ <div class="shots"><img src="https://ph-files.imgix.net/3f532d3f-2551-4a42-b6e2-263c85d8b688.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/78393783-983c-4ca2-a41e-ca8108b0b6e8.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/ea6ef9b1-6c2b-4295-b4be-730f108bbca0.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>06위 · 10.22</span><span>▲ 추천 170</span><span>💬 댓글 35</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Fastlane 2.0</h2>
+  <p class="what">마케터나 창업자가 웹사이트 주소를 입력하면 인공지능 에이전트가 브랜드와 경쟁사를 분석한 뒤 광고 영상과 이미지를 대량으로 제작하고 메타, 틱톡 등에 광고를 집행해 성과를 최적화해 준다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>브랜드 및 경쟁사 자동 분석</li><li>인공지능 광고 크리에이티브 제작</li><li>멀티채널 광고 캠페인 운영</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">제품을 만드는 것만큼이나 사람들에게 알리고 유료 결제를 이끌어내는 것이 어렵다는 문제에서 출발했다. 콘텐츠를 쉽게 만드는 도구로 시작했으나, 시장 조사와 경쟁사 분석, 광고 소재 대량 제작, 캠페인 실행 및 성과 분석까지 마케팅 전 과정을 아우르는 에이전트로 발전시켰다. 빈 프롬프트에서 시작하는 대신 웹사이트 정보를 기반으로 브랜드에 맞는 광고 크리에이티브를 자동 생성하는 것이 핵심이다.</div>
+  <h3>사람들 반응 · 댓글 35개</h3><p style="margin:0 0 6px">콘텐츠 제작부터 광고 집행과 성과 분석까지 마케팅 전 과정을 자동화해 준다는 점에 대해 큰 관심을 보였다.</p><ul class="good"><li>웹사이트 주소만 입력하면 브랜드 맞춤 분석 시작</li><li>광고 테스트에 필요한 다양한 크리에이티브 대량 생성</li><li>메타 및 주요 플랫폼 광고 캠페인 자동 운영</li></ul><ul class="bad"><li>광고 집행을 위해 메타 광고에 대한 깊은 전문 지식이 필요한지 여부</li><li>모든 광고 소재가 비슷비슷해지는 현상을 방지하는 방법 필요</li><li>엄격한 브랜드 가이드라인을 지키기 위한 톤앤매너 고정 기능 필요</li></ul>
+  <h3>한국 시장</h3><div class="kr">웹사이트 분석부터 광고 영상 제작 및 집행까지 마케팅 전 과정을 인공지능으로 자동화하는 도구로, 국내 중소기업 및 마케팅 대행사에서 유용하게 쓰일 수 있다.</div>
+  <p class="price" style="margin-top:12px">마케팅 · 광고 · 마케팅 자동화</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/fastlane-3?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/F336CZV4PLEFYY?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p7">
+ <div class="shots"><img src="https://ph-files.imgix.net/3766fe07-6bb2-443d-ae80-f46e15ac2fa3.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/e6f325a7-9625-427d-bdf9-96e9140f8195.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/512f4e46-4803-4c2f-aa29-7a1617f230ce.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>07위 · 10.22</span><span>▲ 추천 144</span><span>💬 댓글 27</span><span class="chip c-모름">모름</span></div>
+  <h2>CutBay</h2>
+  <p class="what">사용자가 웹사이트 주소, 문서, PDF, 발표 자료 등의 파일이나 아이디어를 대화창에 입력하면, 인공지능 에이전트가 기획부터 대본, 영상, 자막까지 자동으로 영상을 제작하고 대화로 수정해 준다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>다양한 파일의 영상 변환</li><li>대화형 영상 자동 편집</li><li>성우 녹음 및 자막 생성</li></ul>
+  <p class="price">가격 · 무료+유료</p>
+  <h3>만든 사람의 소개</h3><div class="maker">대다수의 영상 편집 도구가 여전히 타임라인과 수동 편집 방식을 강제한다는 점에 착안해 만들었다. 기존 인공지능 도구와 달리 영상을 한번 만들고 끝내는 것이 아니라, 챗봇과 대화하듯 자연스럽게 색상, 그래픽, 레이아웃을 수정할 수 있도록 비디오 에이전트 형태로 설계했다. 문서나 스프레드시트 등의 자료를 곧바로 구조화된 교육 및 마케팅 영상으로 바꿔주는 것이 특징이다.</div>
+  <h3>사람들 반응 · 댓글 27개</h3><p style="margin:0 0 6px">타임라인 편집의 번거로움 없이 문서나 링크를 바로 대화형으로 영상화할 수 있다는 점에서 호평을 받았다.</p><ul class="good"><li>PDF, PPT, 스프레드시트를 영상으로 즉시 변환</li><li>타임라인 수동 편집이 필요 없는 대화형 수정</li><li>기획부터 대본, 자막까지 자동 처리</li></ul>
+  <h3>한국 시장</h3><div class="kr">문서나 스프레드시트를 대화로 영상화하는 서비스로, 복잡한 편집 툴에 익숙하지 않은 국내 마케터와 교육 담당자들에게 유용한 대안이 될 수 있다.</div>
+  <p class="price" style="margin-top:12px">생산성 · 인공지능 · 동영상</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/cutbay?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/NHJ3TS2JQSOSXM?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p8">
+ <div class="shots"><img src="https://ph-files.imgix.net/b00c77ed-aed9-4d8a-b9fa-da4735ee8c30.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/9edd311b-f4d3-4fed-80d5-5d21a0e3316c.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/16a4f8ad-dafb-4aec-b117-00ef6504f2e7.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>08위 · 10.22</span><span>▲ 추천 142</span><span>💬 댓글 27</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Loom Record for agents</h2>
+  <p class="what">사용자가 화면 녹화 버튼을 누르고 말로 설명하며 화면을 조작하면, 음성과 화면 동작을 분석해 챗GPT나 클로드 같은 인공지능 에이전트가 곧바로 실행할 수 있는 구조화된 프롬프트로 변환해 준다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>에이전트용 화면 녹화</li><li>음성 및 화면 동작 프롬프트 변환</li><li>맥 전용 고속 네이티브 앱</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">텍스트로만 인공지능에게 복잡한 지시사항을 타이핑하는 과정이 너무 오래 걸리고 시각적 맥락이 누락되어 원하는 결과물을 얻기 어렵다는 문제에서 출발했다. 타이핑하는 대신 화면을 녹화하고 말로 설명하면서 마법 펜이나 선택 도구 같은 데스크톱 도구를 쓰면, 룸이 목소리와 클릭 동작, 화면 로그를 종합해 인공지능 에이전트가 이해할 수 있는 깔끔한 프롬프트로 바꿔준다. macOS 환경에 맞춰 완전히 새로 구축되어 속도가 빠르고 가볍다.</div>
+  <h3>사람들 반응 · 댓글 27개</h3><p style="margin:0 0 6px">텍스트로 길게 설명할 필요 없이 화면을 보여주며 인공지능에게 업무를 지시할 수 있어 작업 속도가 혁신적으로 빨라졌다는 반응이다.</p><ul class="good"><li>말로 설명하며 화면을 보여주는 직관적인 지시 방식</li><li>인공지능 에이전트가 오작동하지 않도록 정확한 맥락 제공</li><li>더 가볍고 빨라진 맥 네이티브 앱 환경</li></ul>
+  <h3>한국 시장</h3><div class="kr">화면 녹화와 음성 설명을 인공지능 에이전트의 프롬프트로 바꿔주는 기능은 국내 개발 및 기획 부서에서 인공지능 협업 방식을 바꿀 만한 유용한 도구다.</div>
+  <p class="price" style="margin-top:12px">생산성 · 개발자 도구 · 동영상</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/loom?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/CEC7O36EG5BZTB?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p9">
+ <div class="shots"><img src="https://ph-files.imgix.net/c898419e-c562-4609-bee6-3b0eb9769d51.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/2fa2495b-c687-49e5-9182-df4d9c84bb1a.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/62bfa182-a049-4537-aa3b-2ade5b6056f1.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>09위 · 10.22</span><span>▲ 추천 132</span><span>💬 댓글 20</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Dadan</h2>
+  <p class="what">영업 및 마케팅 팀이 화면 녹화, 회의록 요약, 단계별 문서 가이드를 하나의 플랫폼에서 관리하고, 영상 안에 투표나 신청 폼을 넣어 시청자의 참여를 이끌어낸다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>화면 녹화 및 회의록 요약</li><li>스크린샷 단계별 가이드 생성</li><li>설문 및 리드 수집용 대화형 영상</li></ul>
+  <p class="price">가격 · 무료+유료 (프로 요금소 3개월 무료 제공)</p>
+  <h3>만든 사람의 소개</h3><div class="maker">유용한 영상을 만들고 공유하기 위해 여러 개의 도구를 번갈아 써야 하는 불편함을 없애고자 만들었다. 화면 녹화, 편집, 인공지능 요약, 단계별 가이드 문서 생성, 회의 녹화 및 대화형 요소 추가 기능을 하나의 플랫폼으로 통합했다. 영상 시청 후 별도의 링크를 찾게 만드는 대신 영상 안에서 바로 질문에 답하거나 정보를 남길 수 있도록 설계한 것이 특징이다.</div>
+  <h3>사람들 반응 · 댓글 20개</h3><p style="margin:0 0 6px">영상 녹화와 단계별 가이드, 회의록 정리를 하나의 플랫폼에서 해결할 수 있어 교육과 영업에 매우 유용하다는 평이다.</p><ul class="good"><li>녹화 영상을 자동으로 단계별 가이드 문서로 변환</li><li>영상 안에 투표와 리드 수집 폼 삽입 가능</li><li>회의 녹화 및 인공지능 요약 기능 통합</li></ul>
+  <h3>한국 시장</h3><div class="kr">화면 녹화, 회의록, 가이드 문서를 하나로 묶고 영상 내에서 리드 수집까지 지원하는 도구로, 국내 원격근무 기업과 마케팅 팀에 기회가 될 수 있다.</div>
+  <p class="price" style="margin-top:12px">마케팅 · 미팅 · 동영상</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/dadan?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/LAK7P6T2QU7ORA?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p10">
+ <div class="shots"><img src="https://ph-files.imgix.net/2863d339-1fb2-4088-8ba0-826e6cf32a13.jpeg?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/bce2637d-f886-4c1e-963e-3ff34a3b45b3.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/2092ca9a-eeed-4310-8856-65c6dc023502.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>10위 · 10.22</span><span>▲ 추천 121</span><span>💬 댓글 7</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Resend Inboxes</h2>
+  <p class="what">기업이 마케팅 및 거래성 이메일을 대량으로 안정하게 발송하고, 공유 편지함에 인공지능 에이전트를 연결하여 이메일 업무 워크플로우를 구축한다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>대량 이메일 발송</li><li>공유 편지함 생성</li><li>인공지능 에이전트 연동</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">메이커 소개글이 비어 있어 상세한 개발 배경은 나와 있지 않으나, 스팸 폴더에 빠지지 않고 사람들에게 이메일을 안정적으로 전달하며 에이전트를 연동할 수 있는 공유 편지함 서비스로 소개되었다.</div>
+  <h3>사람들 반응 · 댓글 7개</h3><p style="margin:0 0 6px">공유 편지함에서 인공지능 에이전트와 사람이 동시에 답장할 때의 충돌 방지 방법과 스팸 회피 대책에 대해 관심을 보였다.</p><ul class="good"><li>트랜잭션 및 마케팅 이메일 대량 발송 지원</li><li>공유 편지함에 인공지능 에이전트 연동 가능</li></ul><ul class="bad"><li>사람과 에이전트가 동일한 스레드에 답변할 때의 역할 충돌 우려</li><li>스팸 폴더를 피하는 구체적인 메커니즘 확인 필요</li><li>콜드 아웃바운드 이메일 지원 여부 모호함</li></ul>
+  <h3>한국 시장</h3><div class="kr">이메일 발송 인프라와 공유 편지함에 인공지능 에이전트를 결합하는 도구로, 국내 고객지원 및 이메일 마케팅 솔루션 시장에 참고가 될 만하다.</div>
+  <p class="price" style="margin-top:12px">이메일 · API · 개발자 도구</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/resend?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/TY5AGUVHIXOZXC?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article><div class="day">10.23 · 미국 서부</div>
+<article id="p11">
+ <div class="shots"><img src="https://ph-files.imgix.net/2c756dcc-7a27-48f6-907a-5da5fe6fe4d2.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/3ec19904-9017-4331-96b9-02b85cffcc05.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/c59ea434-527d-4c89-ad5e-c2d263661a6c.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>01위 · 10.23</span><span>▲ 추천 428</span><span>💬 댓글 23</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Product Hunt Visual Launch Editor</h2>
+  <p class="what">프로덕트 헌트에 제품을 등록하려는 창업자나 개발자가 실제 게시될 화면을 보며 작성하고 수정할 수 있는 비주얼 편집 도구입니다. 웹사이트 링크만 넣으면 기본 정보를 자동으로 불러오며, 글자나 이미지를 직접 클릭해 즉시 수정할 수 있습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>실시간 비주얼 화면 편집</li><li>웹사이트 링크 기반 정보 자동 수집</li><li>필드 바로가기 출시 체크리스트</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">기존의 단계별 양식 작성 방식은 수정을 반복하게 만들어 답답함을 주었습니다. 이를 개선하고자 실시간 비주얼 에디터를 만들었습니다. 이제 실제 출시 페이지와 똑같이 보이는 화면에서 글자, 갤러리, 링크 등을 직접 클릭해 수정할 수 있습니다. 웹사이트 링크를 입력하면 기본 정보를 자동으로 가져오며, 필수 항목을 안내하고 클릭 시 해당 필드로 바로 이동시켜 주는 체크리스트 기능도 함께 제공합니다.</div>
+  <h3>사람들 반응 · 댓글 23개</h3><p style="margin:0 0 6px">실제 페이지 모습 그대로 즉시 수정할 수 있고 체크리스트에서 해당 필드로 바로 이동해 편리하다는 평이 많습니다.</p><ul class="good"><li>실시간 visual 미리보기 및 즉시 편집 기능</li><li>체크리스트 클릭 시 수정할 필드로 바로 이동</li><li>웹사이트 링크 입력 시 자동 데이터 채우기</li></ul><ul class="bad"><li>카테고리와 태그의 구분이 다소 모호함</li><li>투자 관련 질문의 데이터 활용처 투명성 부족</li></ul>
+  <h3>한국 시장</h3><div class="kr">프로덕트 헌트 같은 글로벌 제품 런칭 플랫폼에 특화된 비주얼 에디터로, 국내 펀딩 솔루션의 폼 작성기 기능은 있으나 런칭 전용 비주얼 에디터 생태계는 드뭅니다.</div>
+  <p class="price" style="margin-top:12px">프로덕트 헌트 · 메이커 도구 · 커뮤니티</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/producthunt?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/Y7DEMV6KEGC3FT?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p12">
+ <div class="shots"><img src="https://ph-files.imgix.net/524aafcb-3fe5-4ad7-a78b-2c1d9030d5c5.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/c8ef8559-dbea-4ad3-a12c-19aee557e249.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/37bdcc1b-23be-4954-9828-af019be28b8c.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>02위 · 10.23</span><span>▲ 추천 301</span><span>💬 댓글 45</span><span class="chip c-드묾">드묾</span></div>
+  <h2>MOVO AI</h2>
+  <p class="what">콘텐츠 크리에이터나 창업자가 모바일 앱 대화창에 거친 아이디어나 영상 재료를 넣으면 스토리 구성부터 장면 연출까지 포함된 롱폼 동영상을 제작해 주는 비디오 에이전트 서비스입니다. 복잡한 명령어를 다루거나 클립을 일일이 자르지 않아도 AI가 백그라운드에서 전체 영상 작성을 완료합니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>단일 대화 기반 롱폼 영상 자동 기획 및 제작</li><li>등장인물 및 장면 일관성 유지 연출</li><li>화면을 꺼도 진행되는 백그라운드 생성 작업</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">카네기 멜런 출신의 AI 엔지니어가 영상을 통해 사람들과 소통하는 데 어려움을 겪는 자신과 주변 창업자, 크리에이터들을 위해 만들었습니다. 단 한 번의 연속 대화만으로 초안 스크립트나 재료를 완성된 롱폼 동영상으로 바꿔줍니다. 백그라운드 작업을 지원하므로 휴대전화 화면을 잠가두어도 AI가 스스로 영상 작업을 이어갑니다.</div>
+  <h3>사람들 반응 · 댓글 45개</h3><p style="margin:0 0 6px">모바일에서 대화만으로 스토리가 있는 롱폼 영상을 만들 수 있다는 아이디어에 큰 기대감을 보이고 있으며, 세부 컷 편집 방식에 대해서도 질문하고 있습니다.</p><ul class="good"><li>모바일 중심의 편리한 롱폼 영상 생성</li><li>복잡한 툴 없이 대화식으로 진행되는 단순함</li><li>스토리라인 중심의 장면 및 인물 일관성</li></ul><ul class="bad"><li>일부 미세한 수정 시 전체 재생성이 필요한지에 대한 우려</li><li>자신이 직접 찍은 라이브러리 영상의 컷 편집 성능 질문</li></ul>
+  <h3>한국 시장</h3><div class="kr">숏폼 AI 영상 편집기는 국내에도 일부 존재하지만, 모바일에서 대화만으로 롱폼 영상을 완성하고 일관성을 유지해주는 에이전트 형태는 드뭅니다.</div>
+  <p class="price" style="margin-top:12px">iOS · 인공지능 · 비디오</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/movo-ai?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/JXYZH5BXNMIBOM?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p13">
+ <div class="shots"><img src="https://ph-files.imgix.net/5fd01a00-4562-4440-abba-498b6b6e3d0e.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/2a1f942d-9af1-404a-b785-bbd4cef14009.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/0d790e87-3ff0-4da7-8ebb-54c47cbf5f72.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>03위 · 10.23</span><span>▲ 추천 274</span><span>💬 댓글 7</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Agent Hunt</h2>
+  <p class="what">AI 에이전트를 개발하는 사람들이 에이전트의 실제 업무에 가장 자주 사용하는 외부 도구와 API의 인기도를 확인할 수 있는 실시간 순위표 서비스입니다. 모니드(Monid)를 통해 발생하는 실시간 호출 데이터를 바탕으로 매일 최신 순위를 집계하여 보여줍니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>AI 에이전트 실사용 도구 실시간 리더보드</li><li>가장 많이 호출된 API 엔드포인트 세부 순위</li><li>에이전트 사이에서 빠르게 성장하는 도구 트래킹</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">Monid 팀에서 선보인 Agent Hunt는 AI 에이전트 생태계를 위한 프로덕트 헌트입니다. AI 에이전트가 실제로 호출하는 데이터를 매일 집계하여 가장 인기 있는 도구, 엔드포인트, 빠른 성장세를 보이는 도구의 순위를 제공합니다. 이를 통해 개발자가 유용한 외부 API 트렌드를 빠르게 발견할 수 있습니다.</div>
+  <h3>사람들 반응 · 댓글 7개</h3><p style="margin:0 0 6px">AI 에이전트의 실제 사용 패턴을 파악할 수 있는 신선한 아이디어라는 평이며, 특히 API 엔드포인트 단위의 순위 조회가 유용하다는 반응입니다.</p><ul class="good"><li>실제 API 호출 데이터에 기반한 객관성</li><li>제품 단위가 아닌 세부 엔드포인트 순위 제공</li><li>유용한 신규 API 발굴 가능성</li></ul><ul class="bad"><li>단순 호출 횟수 위주라 실제 유용성 측정은 한계가 있음</li></ul>
+  <h3>한국 시장</h3><div class="kr">AI 에이전트의 실제 API 사용량을 집계해 랭킹을 매기는 플랫폼은 국내에 아직 드물며, LLM 에이전트 생태계가 성장함에 따라 주목받을 수 있습니다.</div>
+  <p class="price" style="margin-top:12px">개발자 도구 · 인공지능 · GitHub</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/monid?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/VX6RX4U6IBXRW6?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p14">
+ <div class="shots"><img src="https://ph-files.imgix.net/db7c7fae-ae64-4dff-a4af-d8ab9657d5b1.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/2aec8786-5daa-4ba2-b14f-6b87efaa7fea.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/b7251c05-12d8-4210-890b-834a2f134633.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>04위 · 10.23</span><span>▲ 추천 200</span><span>💬 댓글 53</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Ovren Live Preview</h2>
+  <p class="what">기획자나 마케터가 웹사이트의 디자인이나 문구 변경 요청을 자연어로 작성하면, AI가 코드를 고치고 실제 작동하는 라이브 웹 화면을 만들어 주는 서비스입니다. 별도 설치나 배포 과정 없이 생성된 웹 링크에 들어가 직접 클릭해 보고 승인하여 개발팀의 코드에 반영할 수 있습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>자연어 요청 기반 프론트엔드 코드 자동 생성</li><li>설치 및 배포가 필요 없는 실시간 라이브 미리보기</li><li>승인 시 깃허브(GitHub) 풀 리퀘스트 자동 생성</li></ul>
+  <p class="price">가격 · 무료+유료 (신용카드 없이 최대 5회 변경까지 무료 체험 가능)</p>
+  <h3>만든 사람의 소개</h3><div class="maker">코드를 읽지 못하는 비개발자 팀원도 변경 결과를 쉽게 확인할 수 있도록 &#x27;라이브 미리보기&#x27; 기능을 선보였습니다. 깃허브를 연동한 뒤 원하는 변경 내용을 입력하면 AI가 안전한 사본 환경에 코드를 작성하고 즉시 클릭해 볼 수 있는 라이브 페이지를 제공합니다. 결과물이 만족스러우면 승인 버튼을 눌러 개발자에게 검토 요청(PR)을 보낼 수 있습니다.</div>
+  <h3>사람들 반응 · 댓글 53개</h3><p style="margin:0 0 6px">비개발자와 개발자 사이의 역할 분담을 명확히 하고 잔여 수정 요청 작업을 줄여준다는 점에서 매우 유용하다는 평입니다.</p><ul class="good"><li>비개발자의 즉각적인 결과물 확인 및 테스트 가능</li><li>서버 구축이나 로컬 설치가 필요 없는 간편함</li><li>개발자와 비개발자 간의 명확한 역할 분담</li></ul><ul class="bad"><li>모바일/데스크톱 등 다양한 화면 크기(뷰포트) 미리보기 방식 질문</li><li>프롬프트 입력 후 미리보기 생성까지 걸리는 소요 시간 문의</li></ul>
+  <h3>한국 시장</h3><div class="kr">자연어 기반 프론트엔드 수정과 즉각적인 실시간 웹 미리보기를 결합해 비개발자와 개발자의 협업을 돕는 도구는 국내에 드뭅니다.</div>
+  <p class="price" style="margin-top:12px">개발자 도구 · 인공지능 · 노코드</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/ovren?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/GZYWZ6Z6BGE5RV?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p15">
+ <div class="shots"><img src="https://ph-files.imgix.net/4b26b4a9-9f7c-4a44-bcdf-2c6d0acff218.webp?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/35954e57-7315-4ddd-b5c3-759e3173ef32.webp?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/8caa1d84-e382-4a26-9563-eb7ff6b3b6bb.webp?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>05위 · 10.23</span><span>▲ 추천 187</span><span>💬 댓글 3</span><span class="chip c-드묾">드묾</span></div>
+  <h2>ElevenLabs Realtime</h2>
+  <p class="what">음성 기반 AI 에이전트를 제작하려는 개발자가 사람처럼 빠른 속도로 주고받는 대화형 시스템을 구축할 수 있도록 돕는 음성 AI 모델입니다. 사용자가 말했을 때 음성을 인식하고 답변을 생성해 다시 목소리로 출력하기까지의 지연 시간을 0.5초대로 줄여 대화의 흐름을 자연스럽게 만듭니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>0.5초 대 초저지연 음성 대 음성(Speech-to-Speech) 생성</li><li>대화용 Mini 및 복잡한 업무용 Max 모델 제공</li><li>90개 이상 언어 지원 및 오픈AI 규격 API 호환</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">기존 음성 에이전트는 음성 인식, 언어 모델, 음성 합성을 따로 연결해 사용했기 때문에 응답 지연이 길고 대화가 어색하게 끊기는 문제가 있었습니다. Eleven Realtime은 전체 과정을 하나로 최적화하여 첫 응답 시간을 최대 570ms까지 줄였습니다. 기존 오픈AI API와 연동 코드가 호환되므로 엔드포인트와 모델명만 바꾸면 즉시 사용할 수 있습니다.</div>
+  
+  <h3>한국 시장</h3><div class="kr">500ms대의 초저지연 음성-음성 종단간(End-to-End) 모델을 제공하는 글로벌 수준의 음성 인프라 파운데이션 서비스는 국내에 드뭅니다.</div>
+  <p class="price" style="margin-top:12px">인공지능</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/realtime-max-mini?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/J2VB5S23Y57R7F?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p16">
+ <div class="shots"><img src="https://ph-files.imgix.net/801b0fe3-cd07-4c19-9f9a-48765aa23dbc.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/f62e3b12-62e6-4c47-bc1d-6dc96e1536a7.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/a6678481-28e7-4126-bd9f-3bf385bb228d.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>06위 · 10.23</span><span>▲ 추천 156</span><span>💬 댓글 16</span><span class="chip c-있음">있음</span></div>
+  <h2>ShogunAI</h2>
+  <p class="what">맥(Mac) 컴퓨터 사용자가 기존에 주고받은 이메일, 채팅, 문서, 회의 내용을 기억하여 초안 작성이나 회의 준비를 돕는 개인형 AI 비서 서비스입니다. 단축키(Option 키)를 누르면 사용 중인 프로그램 안에서 이전 맥락을 반영한 답장 초안을 자동으로 작성해 줍니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>단축키 기반 작업 맥락 인식 자동 작성</li><li>회의 요약 및 참여자 약속 사항 추적</li><li>로컬 기기 내 출처 기반의 통합 문서 검색 및 양방향 번역</li></ul>
+  <p class="price">가격 · 무료+유료 (7일 무료 체험 제공 및 코드 입력 시 첫 달 무료)</p>
+  <h3>만든 사람의 소개</h3><div class="maker">AI를 사용할 때마다 이전 배경지식을 매번 새로 설명하거나, 작성된 답변을 직접 복사해 이메일이나 파일로 보내야 하는 번거로움을 해결하고자 만들었습니다. 사용자의 맥 기기 내에 텍스트 형태로 작업 맥락과 출처를 안전하게 기록하여 완벽한 개인정보 보호를 제공합니다. 이메일 발송이나 일정 등록 등 외부로 전송되는 주요 동작은 반드시 사용자의 사전 승인을 받아 실행됩니다.</div>
+  <h3>사람들 반응 · 댓글 16개</h3><p style="margin:0 0 6px">매번 맥락을 새로 설명할 필요가 없고 로컬 중심 보안 및 사용자 승인 절차가 포함되어 있어 안전하다는 호평이 많습니다.</p><ul class="good"><li>작업 맥락을 자동 기억하고 원본 출처 제공</li><li>단축키 하나로 기존 앱에서 즉각 답장 작성</li><li>데이터 외부 저장 없음 및 실행 전 승인 단계 제공</li></ul><ul class="bad"><li>현재 Mac 환경만 지원하며 Windows 및 모바일 미지원</li></ul>
+  <h3>한국 시장</h3><div class="kr">개인의 컴퓨터 작업 맥락을 기억해 업무를 돕는 AI 도구로, 한국에는 &#x27;라이너(LINER)&#x27;나 온디바이스 개인화 생산성 도구들이 존재합니다.</div>
+  <p class="price" style="margin-top:12px">Mac · 생산성 · 인공지능</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/shogunai?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/WGEUVK2HDK6FM6?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p17">
+ <div class="shots"><img src="https://ph-files.imgix.net/6bbef86c-ed98-4f44-a379-15ec0574b38e.webp?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/06142eae-1506-4c22-8690-bc1e56347ec6.webp?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/a30623f6-ca89-42a4-98c2-dc00b07877af.webp?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>07위 · 10.23</span><span>▲ 추천 131</span><span>💬 댓글 1</span><span class="chip c-드묾">드묾</span></div>
+  <h2>FLUX 3 Max</h2>
+  <p class="what">영상 크리에이터나 개발자가 텍스트 설명이나 이미지를 넣으면 약 12초 만에 10초 분량의 HD 동영상으로 완성해 주는 초고속 AI 영상 생성 모델입니다. 개발자 플랫폼(fal.ai)을 통해 웹 화면에서 테스트해 보거나 파이썬, 자바스크립트 API 코드로 자신의 애플리케이션에 연결할 수 있습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>텍스트 및 이미지 기반 10초 비디오 초고속 생성</li><li>720p 해상도 고화질 애니메이션 출력</li><li>개발자용 API 및 테스트용 웹 플레이그라운드 제공</li></ul>
+  <p class="price">가격 · 유료 (프로모션가 초당 $0.0425, 정가 초당 $0.17)</p>
+  <h3>만든 사람의 소개</h3><div class="maker">기존 AI 비디오 모델은 수 분의 대기 시간을 요구하거나 속도를 위해 화질과 자연스러운 움직임을 포기해야 했습니다. 이러한 한계를 극복하고자 제작되었습니다. 기존 FLUX 3 모델 대비 생성 속도를 10배 이상 끌어올려 약 12초 만에 10초짜리 720p 클립을 생성합니다. 텍스트 및 이미지 기반 작성을 모두 지원하며, 생성된 영상은 상업용 서비스에 활용할 수 있습니다.</div>
+  
+  <h3>한국 시장</h3><div class="kr">고품질 초고속 API 기반 AI 비디오 파운데이션 모델 서비스는 국내에 드물며, 주로 fal이나 Runway 등 글로벌 인프라 API를 활용하고 있습니다.</div>
+  <p class="price" style="margin-top:12px">인공지능</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/fal-ai?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/H7WZJVJO5LJCXF?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p18">
+ <div class="shots"><img src="https://ph-files.imgix.net/1b751f0a-6758-4390-aecb-b2656a8d2e8a.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/0322d881-ef73-450a-814f-e8857c744ac1.webp?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/b707e614-032e-4de3-9d69-b07c5b697ae3.webp?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>08위 · 10.23</span><span>▲ 추천 131</span><span>💬 댓글 1</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Cloudflare Clairic</h2>
+  <p class="what">개발자가 정리되지 않은 텍스트나 영수증·문서 이미지를 입력하면 이름, 날짜, 금액 등 필요한 핵심 데이터만 표 형태로 정제해 추출해 주는 AI 모델입니다. 텍스트를 한 글자씩 만드는 기존 대형언어모델(LLM) 방식과 달리 단 한 번에 값을 뽑아내는 구조를 적용해 속도가 훨씬 빠르고 비용이 매우 저렴합니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>비구조화된 텍스트 및 이미지 데이터의 단일 패스 구조화</li><li>추출 데이터 항목별 신뢰도 점수 산출</li><li>Workers AI 기반 백만 토큰당 $0.10의 초저가 연산</li></ul>
+  <p class="price">가격 · 유료 (Workers AI 프리뷰 기준 백만 입력 토큰당 $0.10)</p>
+  <h3>만든 사람의 소개</h3><div class="maker">영수증 계산이나 날짜 읽기처럼 문장을 새로 생성할 필요가 없는 작업에 대형언어모델(LLM)을 쓰는 낭비를 줄이고자 만들었습니다. 토큰을 순차적으로 생성하지 않고 단 한 번에 구조화된 값을 반환하도록 전용 모델로 설계했습니다. 백만 토큰당 $0.10라는 매우 저렴한 비용으로 빠르게 필요한 정보만 정제할 수 있습니다.</div>
+  
+  <h3>한국 시장</h3><div class="kr">글로벌 Edge 인프라망을 활용해 초저가·초고속으로 구조화 데이터만 추출해 주는 전용 AI 모델 서비스는 국내 인프라 기업 중 아직 드뭅니다.</div>
+  <p class="price" style="margin-top:12px">개발자 도구 · 인공지능 · 데이터</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/cloudflare?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/A6H4RT6E667XWS?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p19">
+ <div class="shots"><img src="https://ph-files.imgix.net/6d2a5bbb-42bb-4576-89f9-50d5c201386c.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/21d5e8a2-cef9-4b58-88c9-2c34210fa7d1.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/73192b89-27d0-43d0-b7b5-a789357fe9b3.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>09위 · 10.23</span><span>▲ 추천 108</span><span>💬 댓글 6</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Context Engine</h2>
+  <p class="what">개발자나 팀원이 챗GPT, 클로드, 커서 등 다양한 AI 도구를 사용할 때 생기는 작업 맥락과 지식을 한곳에 모아 관리해 주는 메모리 플랫폼입니다. 여러 AI 도구와 사람 팀원이 동일한 작업 이력을 공유하므로 도구를 바꿀 때마다 배경 설명을 새로 입력할 필요가 없습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>다양한 AI(Claude, ChatGPT, Cursor 등) 간 작업 메모리 자동 공유</li><li>저장된 지식 검색, 질문 및 파일 추가 기능</li><li>에이전트와 사람 팀원 간의 작업 맥락 실시간 동기화</li></ul>
+  <p class="price">가격 · 무료+유료 (무료 시작 가능)</p>
+  <h3>만든 사람의 소개</h3><div class="maker">팀 내에서 여러 종류의 AI 에이전트를 사용할 때 지식과 작업 맥락이 흩어지는 문제를 해결하기 위해 만들었습니다. 사람이 직접 파일을 등록하거나 질문할 수 있으며, AI 에이전트가 작업 중 저장한 내용들을 공유 지식 기반으로 만듭니다. 이를 통해 서로 다른 AI 도구를 전환하거나 다른 팀원이 이어서 작업할 때 맥락이 끊기는 것을 방지합니다.</div>
+  <h3>사람들 반응 · 댓글 6개</h3><p style="margin:0 0 6px">AI와 사람이 동일한 지식 메모리를 공유한다는 점이 매우 유용하나, 잘못된 정보가 저장되었을 때의 관리 및 검증 가드레일에 관한 관심이 많습니다.</p><ul class="good"><li>여러 AI 에이전트와 팀원 간의 완벽한 맥락 공유</li><li>도구 전환 시 매번 배경을 설명하는 번거로움 해소</li></ul><ul class="bad"><li>오래되거나 잘못된 정보를 정제하는 가드레일 제어 기능 부재</li><li>사용자별 기여도 우선순위 및 검증 절차 부족</li></ul>
+  <h3>한국 시장</h3><div class="kr">멀티 LLM 개발 환경과 사람 개발자 간의 메모리를 통합 관리하는 공유 컨텍스트 도구는 국내에 드문 신규 영역입니다.</div>
+  <p class="price" style="margin-top:12px">생산성 · 개발자 도구 · 인공지능</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/context-engine-2?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/MJ2TTPRLW354IS?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p20">
+ <div class="shots"><img src="https://ph-files.imgix.net/97560ae7-d1d8-418d-a77e-7211b3712311.jpeg?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/072934fb-5846-40e4-80c9-c0e8679f5924.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>10위 · 10.23</span><span>▲ 추천 104</span><span>💬 댓글 6</span><span class="chip c-있음">있음</span></div>
+  <h2>Dub Startup Program</h2>
+  <p class="what">스타트업이 자사 제품을 홍보해 주는 파트너를 모아 추천 마케팅 프로그램을 운영하도록 도와주는 제휴 관리 솔루션입니다. 파트너 전용 추천(Referral) 링크 생성부터 유입 클릭 및 결제 전환 추적, 보상 정산까지 한곳에서 관리할 수 있습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>파트너 제휴 프로그램 생성 및 관리</li><li>추천 링크 유입 및 전환 실시간 추적</li><li>파트너 보상 집계 및 자동화</li></ul>
+  <p class="price">가격 · 유료 (스타트업 대상 첫해 50% 할인 제공)</p>
+  <h3>만든 사람의 소개</h3><div class="maker">스타트업이 복잡한 트래킹 시스템을 직접 구축하지 않고도 제휴 파트너 프로그램을 손쉽게 도입할 수 있도록 스타트업 프로그램을 출시했습니다. 파트너 추천 트래킹부터 보상 정산까지 하나의 플랫폼에서 원스톱으로 제공합니다. 성장을 원하는 스타트업을 위해 첫해 이용료 50% 할인 혜택을 지원합니다.</div>
+  <h3>사람들 반응 · 댓글 6개</h3><p style="margin:0 0 6px">첫해 50% 할인 및 추천 추적과 보상을 한곳에서 처리할 수 있어 유용하지만, 지원 대상 스타트업 기준이 명확하지 않다는 지적이 있습니다.</p><ul class="good"><li>첫해 50% 할인으로 부담 없이 도입 가능</li><li>추천 트래킹과 보상 정산을 한 화면에서 해결</li></ul><ul class="bad"><li>할인 대상이 되는 스타트업 자격 요건(투자 단계, 매출 등) 안내 부족</li></ul>
+  <h3>한국 시장</h3><div class="kr">SaaS 및 제품의 제휴/추천 트래킹 소프트웨어로, 해외의 Rewardful이나 FirstPromoter 외에도 국내에 다양한 마케팅 트래킹 및 제휴 솔루션이 존재합니다.</div>
+  <p class="price" style="margin-top:12px">마케팅 · SaaS · 제휴 마케팅</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/dub?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/4BOWHNSPRGHOFP?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article><div class="day">10.24 · 미국 서부</div>
+<article id="p21">
+ <div class="shots"><img src="https://ph-files.imgix.net/81056b59-8f93-4160-8c7f-50e6cdb5524b.jpeg?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/c55184f6-4eae-4864-b120-43909d9c93da.jpeg?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/395aaaae-a967-4615-b3e8-b5469ea48753.jpeg?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>01위 · 10.24</span><span>▲ 추천 309</span><span>💬 댓글 35</span><span class="chip c-모름">모름</span></div>
+  <h2>zCAD AI</h2>
+  <p class="what">엔지니어와 디자이너가 만들고 싶은 부품이나 어셈블리를 말로 입력하면, 실제로 제작하고 편집할 수 있는 3D CAD 모델을 만들어 줍니다. 텍스트 설명이나 참고 이미지를 넣으면 브라우저 기반 편집기에서 고쳐서 STEP 파일로 내보낼 수 있습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>텍스트 기반 3D 생성</li><li>브라우저 편집기</li><li>STEP 파일 내보내기</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">아이디어를 3D CAD 모델로 바꾸는 일은 방법을 알더라도 상당한 노력이 필요하기에, 제작을 시작하는 문턱을 낮추고자 만들었습니다. 텍스트 설명과 참고 이미지를 넣어 CAD 부품과 어셈블리를 만들고, 결과물을 확인하고 다듬을 수 있습니다. 만든 기본 모델은 zCAD 온라인에서 계속 작업할 수 있고, 다른 CAD 도구에서도 쓰도록 솔리드 지오메트리를 STEP 파일로 내보낼 수 있습니다. 기계 엔지니어, 제품 디자이너, 하드웨어 메이커가 반복적인 모델링에 쓰는 시간을 줄이고 디자인 개발에 집중하도록 돕습니다.</div>
+  <h3>사람들 반응 · 댓글 35개</h3><p style="margin:0 0 6px">실물 제작에 알맞은 솔리드 지오메트리와 편집 가능한 모델을 만들어 준다는 점에서 좋은 반응을 얻었습니다.</p><ul class="good"><li>만든 모델을 계속 수정할 수 있음</li><li>실제 물리적 제작에 알맞은 CAD 형식 지원</li></ul>
+  <h3>한국 시장</h3><div class="kr">CAD 설계 및 3D 모델링 생성 분야는 전문적인 엔지니어링 영역이라 일반적인 국내 소프트웨어와 직접 비교하기 어렵습니다.</div>
+  <p class="price" style="margin-top:12px">디자인 도구 · SaaS · 3D 모델링</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/zcad-ai?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/VPIBBXXNICLFJA?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p22">
+ <div class="shots"><img src="https://ph-files.imgix.net/a6020b7b-60fd-481f-b8f4-9a7d1a4c84e4.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/0f1bc0ca-766f-4642-b918-46df9a649e28.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/669284d6-6ab8-4658-b5f1-deb7a632da0b.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>02위 · 10.24</span><span>▲ 추천 266</span><span>💬 댓글 17</span><span class="chip c-드묾">드묾</span></div>
+  <h2>myPip</h2>
+  <p class="what">일반 사용자가 만들고 싶은 게임 내용을 일상적인 언어로 입력하면, 브라우저에서 바로 플레이하고 수정할 수 있는 게임을 만들어 줍니다. 텍스트로 아이디어를 넣으면 멀티플레이어 게임을 만들고 퍼블리싱할 수 있습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>AI 게임 생성</li><li>실시간 멀티플레이어</li><li>컨트롤러 연결</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">많은 사람이 머릿속에 품고만 있던 게임 아이디어를 실현하고자 만들었습니다. 게임 엔진은 강력하지만 진입 장벽이 높고 C#을 먼저 배우라는 요구 때문에 아이디어가 묻히곤 합니다. 그래서 누구나 영어로 게임을 설명하면 몇 분 만에 플레이할 수 있도록 만들었습니다. 텍스트로 게임을 만들고 고치는 코딩 기능뿐만 아니라, 친구들과 실시간으로 게임을 함께 만드는 멀티플레이어 제작 기능도 제공합니다.</div>
+  <h3>사람들 반응 · 댓글 17개</h3><p style="margin:0 0 6px">코딩 없이 친구들과 실시간으로 게임을 만들 수 있는 기능이 흥미롭다는 반응입니다.</p><ul class="good"><li>친구들과 함께 게임을 만드는 코딩 기능</li><li>게임 컨트롤러 연결 지원</li></ul>
+  <h3>한국 시장</h3><div class="kr">노코드 게임 제작 및 AI 기반 콘텐츠 생성 분야로, 국내에서는 초중등 코딩 교육이나 인디 게임 제작 커뮤니티에서 활용될 기회가 있을 것입니다.</div>
+  <p class="price" style="margin-top:12px">개발자 도구 · 게임 · 바이브 코딩</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/mypip-2?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/EHF3WCHUMHPPQ4?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p23">
+ <div class="shots"><img src="https://ph-files.imgix.net/1c235f64-ca2f-4279-8d33-60588cd62e2c.webp?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/6fefb330-ee62-4ef2-ab45-6ebd2dc331ec.webp?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/76e91f72-1d45-46fe-b987-52f75ceaa206.webp?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>03위 · 10.24</span><span>▲ 추천 251</span><span>💬 댓글 7</span><span class="chip c-있음">있음</span></div>
+  <h2>1Password for Agents</h2>
+  <p class="what">개인 AI 에이전트가 웹사이트나 앱에 로그인해야 할 때, 비밀번호를 직접 드러내지 않고 안전하게 로그인을 처리해 줍니다. 에이전트가 로그인을 시도할 때 사용자가 자신의 기기에서 승인하면 1Password가 비밀번호를 입력해 줍니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>AI 에이전트 자동 완성</li><li>기기 내 접근 승인 및 거부</li><li>개인 및 가족 플랜 포함</li></ul>
+  <p class="price">가격 · 무료+유료 (개인 및 가족 플랜 포함)</p>
+  <h3>만든 사람의 소개</h3><div class="maker">개인 AI 에이전트가 구매나 계정 관리 등 일을 처리하려고 사이트와 앱에 로그인해야 하는 때가 늘고 있지만, 비밀번호를 그대로 넘겨주는 것은 위험합니다. 에이전트가 로그인 화면에 닿으면 1Password에 자격 증명을 요청하고, 사용자가 자신의 기기에서 이를 승인하거나 거부하는 방식으로 해결합니다. 에이전트는 자격 증명을 전혀 받지 않고 고유한 디지털 키로 신원을 증명하며, 전체 볼트에 접근할 수 없다는 차별점이 있습니다.</div>
+  <h3>사람들 반응 · 댓글 7개</h3><p style="margin:0 0 6px">AI 에이전트에게 비밀번호를 드러내지 않고 안전하게 로그인을 승인할 수 있어 보안성이 높다는 평가를 받습니다.</p><ul class="good"><li>에이전트가 비밀번호를 볼 수 없음</li><li>사용자 기기에서 직접 접근 승인 제어 가능</li></ul>
+  <h3>한국 시장</h3><div class="kr">패스워드 관리 서비스인 1Password를 활용하는 기능이므로, 국내에서는 주로 보안 및 비밀번호 관리 도구 시장과 연관됩니다.</div>
+  <p class="price" style="margin-top:12px">인공지능</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/1password?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/QPQLVSCTPHCQGE?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p24">
+ <div class="shots"><img src="https://ph-files.imgix.net/94f375a4-baf2-4f4b-8e02-e2c1a5c4aee2.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/9400419b-6a38-4d7a-a9f5-e13fa0fba793.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/882bbbe0-d0d7-4fdd-b453-12cb125d5aa1.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>04위 · 10.24</span><span>▲ 추천 156</span><span>💬 댓글 19</span><span class="chip c-드묾">드묾</span></div>
+  <h2>AgentValley</h2>
+  <p class="what">개발자가 맥북을 쓸 때 여러 개의 Claude Code 세션과 에이전트가 무엇을 하고 있는지, 누구의 응답을 기다리는지를 맥북 노치 영역에서 한눈에 보여줍니다. 사용자가 텍스트 창이나 세션 상태를 일일이 확인하지 않고도 작업 현황을 파악하게 해 줍니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>노치 영역 에이전트 모니터링</li><li>픽셀 캐릭터 시각화</li><li>작업 대기 상태 알림</li></ul>
+  <p class="price">가격 · 무료</p>
+  <h3>만든 사람의 소개</h3><div class="maker">여러 개의 Claude Code 창을 동시에 띄워두고 일할 때 어떤 에이전트가 어떤 프로젝트에서 무엇을 하는지, 멈춰 있는지, 답을 기다리는지 한곳에서 확인하고 싶어 만들었습니다. 에이전트마다 고유한 생김새를 지닌 작은 픽셀 캐릭터가 배정되어 마치 직원처럼 일하는 모습을 지켜볼 수 있습니다.</div>
+  <h3>사람들 반응 · 댓글 19개</h3><p style="margin:0 0 6px">여러 에이전트의 작업을 맥북 노치에서 눈으로 바로 확인할 수 있어 유용하다는 반응입니다.</p><ul class="good"><li>누가 응답을 기다리는지 쉽게 확인 가능</li><li>귀여운 픽셀 캐릭터 디자인</li></ul>
+  <h3>한국 시장</h3><div class="kr">개발자 생산성 도구 및 맥OS 메뉴바/노치 활용 앱으로, 국내 개발자 커뮤니티에서도 맥북 사용자들을 중심으로 유용하게 쓰일 수 있습니다.</div>
+  <p class="price" style="margin-top:12px">오픈 소스 · 개발자 도구 · GitHub</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/agentvalley?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/FXTTULYREWAUGP?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p25">
+ <div class="shots"><img src="https://ph-files.imgix.net/2340f058-d596-4a80-968f-19d6d7803e5f.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/cf4b68de-7e88-41e3-8f84-66c814a82660.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/b2826cce-cbd4-4b52-a01c-a3d0a7db42d7.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>05위 · 10.24</span><span>▲ 추천 141</span><span>💬 댓글 1</span><span class="chip c-있음">있음</span></div>
+  <h2>Canva Craft</h2>
+  <p class="what">마케터와 디자이너가 원하는 이미지를 텍스트로 입력하면, 단순한 그림이 아니라 구도가 잘 잡히고 텍스트와 요소가 들어간 편집 가능한 디자인 이미지를 만들어 줍니다. 글자가 포함된 레이아웃을 만들어 캔바에서 각각 따로 편집할 수 있게 해 줍니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>구도 사전 계획 이미지 생성</li><li>다국어 텍스트 렌더링</li><li>편집 가능한 레이어 분할</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">매주 시각 자료를 만드는 과정에서 기존 AI 이미지 생성 모델의 가장 큰 불만이었던 엉터리 글자 문제를 해결하고자 도입했습니다. 레이아웃을 먼저 계획한 후 그림을 그리도록 설계되어 텍스트가 실제 글자처럼 읽히고 원하는 자리에 요소가 놓입니다. 결과물을 Canva에서 열어 부속품을 따로 편집할 수 있고, 스토리나 배너 등 필요한 모든 크기로 만들 수 있습니다.</div>
+  <h3>사람들 반응 · 댓글 1개</h3><p style="margin:0 0 6px">댓글이 없습니다.</p>
+  <h3>한국 시장</h3><div class="kr">디자인 제작 플랫폼인 캔바(Canva)의 기능이므로, 국내 디자인 및 마케팅 실무에서 흔히 쓰이는 캔바코리아 서비스와 연계됩니다.</div>
+  <p class="price" style="margin-top:12px">디자인 도구 · 마케팅 · 사진</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/canva?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/WZ53YD2FURN4TB?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p26">
+ <div class="shots"><img src="https://ph-files.imgix.net/fa0e355c-9f3a-484d-9f45-bbff20e43bf2.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/375fa9e7-7fc6-4af4-b487-b3789abca554.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/c1f79e39-5949-4ace-a9fa-d39c1c44d44a.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>06위 · 10.24</span><span>▲ 추천 115</span><span>💬 댓글 6</span></div>
+  <h2>LinkIntel</h2>
+  <p class="what">사용자가 X에 올린 게시물 성과 데이터와 X의 알고리즘 랭킹 가중치 변화를 AI 어시스턴트에 연결해 줍니다. AI에게 다음 게시물 아이디어를 물어보면 과거 성과와 최신 알고리즘을 바탕으로 알맞은 초안을 작성해 줍니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>X 게시물 성과 일일 기록</li><li>X 랭킹 알고리즘 변경 추적</li><li>AI 에이전트 연동 URL 제공</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">Claude로 X 게시물 초안을 쓸 때 모델이 과거 게시물 성과를 전혀 모른 채 막연한 &#x27;좋은 글&#x27; 기준으로만 쓰던 문제를 해결하려고 만들었습니다. MCP 서버로 기존에 쓰던 AI 어시스턴트에 URL 하나로 연결하여 사용자의 X 성과 데이터와 X가 깃허브에 공개한 랭킹 가중치 바뀐 내역을 제공합니다. 이를 통해 어시스턴트는 실제 성과와 알고리즘 변화를 담은 맞춤형 게시물 초안을 쓸 수 있습니다.</div>
+  <h3>사람들 반응 · 댓글 6개</h3><p style="margin:0 0 6px">X의 알고리즘 바뀐 내역을 깃허브 커밋과 연동해 추적하고 AI 작성에 반영한다는 점이 믿음직하다는 의견이 있습니다.</p><ul class="good"><li>X 알고리즘 바뀐 내역을 커밋과 함께 투명하게 추적</li><li>개인 X 성과를 AI 초안 작성에 활용 가능</li></ul><ul class="bad"><li>브랜드 이름이 링크드인(LinkedIn)을 떠올리게 한다는 지적</li></ul>
+  <h3>한국 시장</h3><div class="kr">(코멘트 없음)</div>
+  <p class="price" style="margin-top:12px">Twitter · 소셜 Media · 개발자 도구</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/linkintel?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/BRLPMVHM6UBNJP?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p27">
+ <div class="shots"><img src="https://ph-files.imgix.net/31c7f631-da54-4c81-bf60-0d26689f7745.jpeg?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/e4b7ab9f-14d9-49fd-9008-6c40af326987.gif?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/28e353c4-8052-4270-bcb2-d32f852ebf1b.jpeg?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>07위 · 10.24</span><span>▲ 추천 102</span><span>💬 댓글 6</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Many Displays</h2>
+  <p class="what">맥 사용자에게 외부 모니터가 절전에서 깨어날 때 엉키는 창들의 위치와 크기를 저절로 원래대로 되돌려 줍니다. 클라우드나 계정 없이 맥이 모니터를 인식할 때 창들의 원래 배치를 그대로 복원해 줍니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>창 위치 자동 복원</li><li>동일 모니터 포트별 구분</li><li>클라우드 없는 로컬 작동</li></ul>
+  <p class="price">가격 · 유료 ($19 일회성 구매, 14일 무료 체험)</p>
+  <h3>만든 사람의 소개</h3><div class="maker">똑같은 LG 4K 모니터 두 대가 절전에서 돌아올 때마다 자리가 바뀌어 창이 한쪽으로 쏠리는 문제를 해결하고자 개발했습니다. macOS가 같은 시리얼 번호나 절전 중 디스플레이 연결 해제 등으로 모니터를 제대로 구분하지 못하는 점을 시스템 UUID와 물리적 포트로 해결합니다. 네트워크나 분석 도구 없이 창 서버의 목록을 빠르게 읽어와 창 위치를 되돌립니다.</div>
+  <h3>사람들 반응 · 댓글 6개</h3><p style="margin:0 0 6px">같은 모니터들이 절전 후 자리가 바뀌는 맥 사용자의 잦은 문제를 해결해 준다는 점에서 공감을 얻고 있습니다.</p><ul class="good"><li>같은 모니터들의 자리 바뀜 현상 해결</li><li>빠르고 가벼운 로컬 작동</li></ul>
+  <h3>한국 시장</h3><div class="kr">맥OS 다중 모니터 창 관리 유틸리티로, 국내 개발자나 디자이너 등 맥 멀티 모니터 유저들에게 유용한 도구입니다.</div>
+  <p class="price" style="margin-top:12px">Mac · 생산성 · GitHub</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/many-displays?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/GSPZTCB4QSTTSI?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p28">
+ <div class="shots"><img src="https://ph-files.imgix.net/369d7361-4cd7-4c03-aa13-3f75283d8b90.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/846598d8-7198-48b2-a01e-ce9a97f2f77e.gif?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/7c26af89-d3c9-4a50-ab56-303ccd931882.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>08위 · 10.24</span><span>▲ 추천 100</span><span>💬 댓글 5</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Penta</h2>
+  <p class="what">사용자의 애플 뮤직 보관함을 90년대 감성의 5디스크 CD 플레이어 화면으로 재생할 수 있게 해 줍니다. 아이폰에서 실제 CD 체인저의 소리와 움직임을 되살리며 디스크를 바꾸는 듯한 조작 경험을 줍니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>아날로그 CD 체인저 사운드</li><li>디스크 캐러셀 애니메이션</li><li>애플 뮤직 연동</li></ul>
+  <p class="price">가격 · 무료+유료 (Pro 버전 일회성 잠금 해제)</p>
+  <h3>만든 사람의 소개</h3><div class="maker">아버지가 쓰시던 오래된 5디스크 CD 플레이어에서 영감을 받아 실제 소리와 움직임을 충실히 구현해 만들었습니다. 사람들의 추억을 불러일으킬 실제 모델 스킨을 더할 계획이며 현재 아이폰, 아이패드, Duo 기기에서 무료로 쓸 수 있습니다.</div>
+  <h3>사람들 반응 · 댓글 5개</h3><p style="margin:0 0 6px">90년대 감성을 깨우는 아날로그 사운드와 세심한 인터페이스에 좋은 반응을 보이고 있습니다.</p><ul class="good"><li>실제 CD 체인저의 소리와 움직임 구현</li><li>추억을 떠올리게 하는 디자인</li></ul>
+  <h3>한국 시장</h3><div class="kr">레트로 감성의 음악 재생 앱으로, 국내 애플 뮤직 사용자 중 감성적인 UI/UX를 선호하는 이들에게 어필할 수 있습니다.</div>
+  <p class="price" style="margin-top:12px">iOS · 음악 · GitHub</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/penta-cd-player-changer?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/OSUIR3XGHPGCRN?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p29">
+ <div class="shots"><img src="https://ph-files.imgix.net/3aea0f09-db1d-44f5-b4ea-d0153e9b18ad.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/2560f9e0-c504-4b95-bf27-e5bb29cc4a3a.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/eb0139ab-4861-4899-bd73-df9c52307841.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>09위 · 10.24</span><span>▲ 추천 96</span><span>💬 댓글 7</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Byter</h2>
+  <p class="what">사용자가 와이파이, 핫스팟, 유선 인터넷 등 네트워크별로 데이터를 얼마나 썼는지 추적하고 보여줍니다. 인터넷 속도 측정과 데이터 사용량 급증 알림을 통해 데이터를 어디에 썼는지 정확히 파악하게 해 줍니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>네트워크별 데이터 사용량 추적</li><li>실시간 속도 테스트</li><li>사용량 급증 알림</li></ul>
+  <p class="price">가격 · 무료</p>
+  <h3>만든 사람의 소개</h3><div class="maker">아크라에서 휴대폰 핫스팟으로 일하던 중 데이터가 순식간에 사라지는 일을 겪고 어디에 쓰였는지 알기 어렵다는 점에서 착안해 개발했습니다. 집 와이파이, 사무실 네트워크, 핫스팟의 데이터 사용량이 하나로 뭉뚱그려지는 문제를 해결하고자 메뉴바에서 네트워크별로 데이터를 추적하고 프라이버시를 지키며 사용량 급증을 알려주는 가벼운 앱을 만들었습니다.</div>
+  <h3>사람들 반응 · 댓글 7개</h3><p style="margin:0 0 6px">복잡하지 않고 깔끔하게 네트워크별 데이터 사용량과 속도를 보여준다는 점에서 호평을 받고 있습니다.</p><ul class="good"><li>깔끔한 UI와 메뉴바 편의성</li><li>인터넷 속도 테스트 기능 포함</li></ul>
+  <h3>한국 시장</h3><div class="kr">맥OS용 네트워크 및 데이터 사용량 모니터링 앱으로, 국내 모바일 핫스팟이나 테더링을 자주 쓰는 사용자들에게 유용합니다.</div>
+  <p class="price" style="margin-top:12px">Mac · 메뉴 바 앱 · Apple</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/byter?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/P5AUEEE3ERUV7M?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p30">
+ <div class="shots"><img src="https://ph-files.imgix.net/50572046-009b-4d53-9b01-7339494d689e.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/fcd76738-529f-49d8-8ea7-ecbb37484dd2.jpeg?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/9df0c4f0-9ed2-45f1-9de7-feb45c444863.jpeg?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>10위 · 10.24</span><span>▲ 추천 87</span><span>💬 댓글 5</span><span class="chip c-드묾">드묾</span></div>
+  <h2>How It Went</h2>
+  <p class="what">사용자가 자전거 라이딩이나 여행 중 기록한 GPS 경로 파일, 사진, 영상을 바탕으로 이동 경로가 지도 위에 그려지는 단편 영화 영상을 만들어 줍니다. 스마트폰이나 맥에서 직접 영상을 만들고 MP4 파일로 내보낼 수 있게 해 줍니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>GPS 경로 기반 지도 애니메이션</li><li>사진 및 영상 위치 자동 매칭</li><li>기기 내 비디오 렌더링</li></ul>
+  <p class="price">가격 · 무료+유료 (프리미엄 구독 또는 일회성 구매)</p>
+  <h3>만든 사람의 소개</h3><div class="maker">여러 날 동안 자전거 여행을 다녀올 때마다 사진과 액션캠 클립, 그리고 아무도 보지 않을 가민(Garmin) 트랙 파일만 쌓이는 문제를 해결하고자 만들었습니다. 단순한 슬라이드쇼는 긴 여정의 흐름을 보여주지 못하기 때문에 경로를 바탕으로 지도가 그려지고 사진과 클립이 제자리에서 재생되는 영상을 만들고자 했습니다. 카메라 시계 오차를 한 번만 맞추면 모든 촬영본이 함께 조정되며, 서버가 아닌 스마트폰이나 맥에서 직접 렌더링을 처리합니다.</div>
+  <h3>사람들 반응 · 댓글 5개</h3><p style="margin:0 0 6px">여행 및 라이딩 기록을 눈에 보이는 영상으로 만들어 나누기 좋은 아이디어라는 반응입니다.</p><ul class="good"><li>GPS 경로와 사진을 합친 독창적 영상 제작</li><li>기기 내에서 직접 렌더링 수행</li></ul>
+  <h3>한국 시장</h3><div class="kr">아웃도어 활동 및 GPS 기록 시각화 앱으로, 국내 자전거 라이더나 등산·여행 동호인들 사이에서 활용될 수 있습니다.</div>
+  <p class="price" style="margin-top:12px">Android · 자전거 · 여행</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/how-it-went?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/HHBJPDPSK62X4D?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article></main>
+<footer><div class="wrap"><a href="index.html">지난 브리핑 보기</a> · Auto_PH · 개인 용도</div></footer>
+</body></html>
