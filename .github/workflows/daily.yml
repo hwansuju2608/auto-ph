@@ -14,7 +14,7 @@ permissions:
 jobs:
   run:
     runs-on: ubuntu-latest
-    timeout-minutes: 20
+    timeout-minutes: 30   # 제미나이가 몰리면 5분 쉬고 한 바퀴 더 묻기 때문에 (10/27 실패 뒤 20→30)
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5

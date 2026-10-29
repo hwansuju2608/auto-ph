@@ -53,6 +53,23 @@ def parse(text):
 MODELS = ["gemini-3.5-flash", "gemini-3.8-flash"]   # 좋은 모델 먼저 (두 번까지 시도)
 LITE = "gemini-flash-lite-latest"                    # 그래도 안 되면 마지막 수단
 FIELDS = ["번호", "이름", "한줄소개", "설명", "메이커글", "댓글들", "태그"]
+WAIT = 300          # 한 바퀴(4번 시도)가 모두 실패하면 5분 쉬고 한 바퀴 더 (10/27 제미나이 몰림으로 메일이 안 옴)
+DEADLINE = 8 * 60   # 처리 블록이 이미 8분 넘게 돌았으면 한 바퀴 더는 하지 않음 (깃허브 30분 제한 안에 "막힘"을 남기려고)
+
+def ask(key, part, errs):
+    """한 바퀴: 4번까지 묻는다 (마지막 두 번은 가벼운 모델). 성공하면 (답, 모델), 아니면 (None, None)."""
+    for attempt in range(4):           # 답이 깨져 있어도 다시 물어본다
+        cand = MODELS if attempt < 2 else [LITE]
+        for model in cand:
+            try:
+                return parse(call(key, model, PROMPT + json.dumps(part, ensure_ascii=False))), model
+            except urllib.error.HTTPError as e:
+                errs.append(f"{model}: HTTP {e.code}")
+            except Exception as e:
+                errs.append(f"{model}: 답을 읽지 못함 {e}")
+        if attempt < 3:
+            time.sleep(30)
+    return None, None
 
 def main():
     key = env("GEMINI_API_KEY")
@@ -63,22 +80,17 @@ def main():
         log("처리", False, "1_자료.json이 없음 (자료 블록부터)"); return False
     data = json.load(open(src, encoding="utf-8"))
     used, res = set(), {}
+    start, retried = time.monotonic(), False
     days = sorted({it["날짜"] for it in data["목록"]})
     for day in days:                       # 날짜별로 나눠 보내 응답을 짧게
         part = [{k: it.get(k, "") for k in FIELDS} for it in data["목록"] if it["날짜"] == day]
-        rows, errs = None, []
-        for attempt in range(4):           # 답이 깨져 있어도 다시 물어본다 (마지막 두 번은 가벼운 모델)
-            cand = MODELS if attempt < 2 else [LITE]
-            for model in cand:
-                try:
-                    rows = parse(call(key, model, PROMPT + json.dumps(part, ensure_ascii=False))); break
-                except urllib.error.HTTPError as e:
-                    errs.append(f"{model}: HTTP {e.code}")
-                except Exception as e:
-                    errs.append(f"{model}: 답을 읽지 못함 {e}")
-            if rows is not None:
-                break
-            time.sleep(30)
+        errs = []
+        rows, model = ask(key, part, errs)
+        if rows is None and not retried and time.monotonic() - start < DEADLINE:
+            retried = True                 # 한 번 실행에 한 바퀴 더는 한 번만 (월요일 사흘 치도)
+            log("처리", True, f"{day} 한 바퀴 모두 실패 — 5분 쉬고 한 바퀴 더")
+            time.sleep(WAIT)
+            rows, model = ask(key, part, errs)
         if rows is None:
             log("처리", False, f"Gemini 실패 ({day}): " + ", ".join(errs)); return False
         if errs:
