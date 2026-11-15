@@ -1,0 +1,501 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>PH 한국어 브리핑 11.12 · 11.13 · 11.14</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+:root{--indigo:#1b1938;--deep:#0e0c1f;--violet:#c9b4fa;--ink:#292827;--mute:#73706d;--faint:#9a9794;
+--line:#e8e4dd;--soft:#fafaf8;--teal:#0e3030;--ok:#1f7a4d;--warn:#a5532a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;background:var(--soft);color:var(--ink);font-family:Pretendard,"Malgun Gothic","Apple SD Gothic Neo",system-ui,sans-serif;line-height:1.65;-webkit-font-smoothing:antialiased}
+a{color:inherit}
+.wrap{max-width:760px;margin:0 auto;padding:0 16px}
+header{background:radial-gradient(circle at 85% 0%,#8f7ad6 0%,#4a3f8f 22%,var(--indigo) 55%,var(--deep) 100%);color:#fff;padding:44px 0 36px}
+.eyebrow{font-size:13px;font-weight:600;color:var(--violet)}
+h1{font-size:34px;line-height:1.2;margin:12px 0 10px;letter-spacing:-.5px}
+h1 span{color:var(--violet)}
+.lead{color:#bcbac9;font-size:15px;margin:0}
+nav.toc{display:flex;flex-wrap:wrap;gap:6px;margin-top:20px}
+nav.toc a{font-size:13px;text-decoration:none;color:#fff;border:1px solid #3f3a52;border-radius:999px;padding:4px 11px}
+nav.toc a:hover{background:#3f3a52}
+.day{margin:34px 0 4px;font-size:13px;font-weight:700;color:var(--mute)}
+article{background:#fff;border:1px solid var(--line);border-radius:16px;margin:14px 0 22px;overflow:hidden;scroll-margin-top:12px}
+article:target{box-shadow:0 0 0 3px var(--violet)}
+.shots{display:flex;gap:6px;overflow-x:auto;background:var(--soft);padding:10px;scroll-snap-type:x mandatory}
+.shots img{height:220px;width:auto;border-radius:10px;scroll-snap-align:start;flex:none;background:#eee}
+.body{padding:22px 24px 24px}
+.meta{font-size:13px;color:var(--mute);font-weight:600;display:flex;flex-wrap:wrap;gap:6px 12px;align-items:center}
+.chip{display:inline-block;font-size:12px;font-weight:700;padding:2px 9px;border-radius:5px}
+.c-드묾{background:var(--violet);color:var(--indigo)}.c-있음{background:var(--indigo);color:#fff}.c-모름{border:1px solid var(--line);color:var(--mute)}
+h2{font-size:24px;margin:8px 0 6px;letter-spacing:-.3px}
+.what{font-size:16.5px;margin:0 0 14px}
+h3{font-size:13px;color:var(--mute);margin:18px 0 6px;font-weight:700}
+ul{margin:0;padding-left:20px}li{margin:3px 0}
+.feat li::marker{content:"✓  ";color:var(--ok)}
+.good li::marker{content:"＋ ";color:var(--ok)}.bad li::marker{content:"－ ";color:var(--warn)}
+.maker{background:var(--soft);border-radius:10px;padding:12px 14px;font-size:15px}
+.kr{background:var(--indigo);color:#fff;border-radius:10px;padding:12px 14px;font-size:15px}
+.price{font-size:14px;color:var(--mute)}
+.btns{display:flex;gap:8px;flex-wrap:wrap;margin-top:18px}
+.btns a{text-decoration:none;font-size:14px;font-weight:600;padding:8px 14px;border-radius:8px;border:1px solid var(--line)}
+.btns a.main{background:var(--indigo);color:#fff;border-color:var(--indigo)}
+footer{background:var(--teal);color:#a9c6c6;font-size:13px;padding:26px 0;margin-top:30px}
+footer a{color:#fff}
+@media(max-width:560px){h1{font-size:28px}.shots img{height:170px}.body{padding:18px 16px 20px}h2{font-size:21px}}
+</style></head><body>
+<header><div class="wrap"><div class="eyebrow">Auto_PH · Product Hunt 한국어 브리핑</div>
+<h1>미국 서부 11.12 · 11.13 · 11.14<br><span>한국에 드문 것 15개</span></h1>
+<p class="lead">Product Hunt 상위 30개를 한국어로 정리했습니다. 설명·반응 요약·한국 코멘트는 AI가 쓴 참고용입니다.</p>
+<nav class="toc"><a href="#p1">Plurai Simulation</a><a href="#p2">YouArt Desktop App</a><a href="#p3">Claude Meetings</a><a href="#p4">Omnigraph</a><a href="#p5">⌘+L</a><a href="#p6">Spacefast by Automattic</a><a href="#p7">Adobe AI Assistant</a><a href="#p8">Harness Memory</a><a href="#p9">three.dev</a><a href="#p10">Nameshot</a><a href="#p11">Templify AI</a><a href="#p12">Filament by Galaxy</a><a href="#p13">Claude Meetings</a><a href="#p14">Replicate</a><a href="#p15">Trainn MCP</a><a href="#p16">Gemini 4 Hydrogen</a><a href="#p17">qorqbot</a><a href="#p18">Ganella</a><a href="#p19">Paxper</a><a href="#p20">Google Pixel Tag</a><a href="#p21">HiringNow</a><a href="#p22">Businesses in ChatGPT</a><a href="#p23">Dex Semantics</a><a href="#p24">Gemini Robotics 2.5</a><a href="#p25">Blender 5.3</a><a href="#p26">HuntMonitor</a><a href="#p27">CaptureFlow</a><a href="#p28">Kokonut UI</a><a href="#p29">Uber Parking</a><a href="#p30">Remindly</a></nav></div></header>
+<main class="wrap"><div class="day">11.12 · 미국 서부</div>
+<article id="p1">
+ <div class="shots"><img src="https://ph-files.imgix.net/88985531-f5a2-4565-bc25-85d438eba883.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/831d9fac-bd79-45cb-8024-1b225186a1eb.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/965bcd44-76f4-468b-96eb-ccb1613424ad.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>01위 · 11.12</span><span>▲ 추천 418</span><span>💬 댓글 139</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Plurai Simulation</h2>
+  <p class="what">AI 에이전트 개발자가 기존 코드 저장소를 연결하면 에이전트가 작동할 가상 데이터베이스와 외부 도구 환경을 자동으로 만들어 줍니다. 실제 서비스 데이터에 영향을 주지 않으면서 가상 사용자와 대화시키며 에이전트의 기능 오류와 버그를 사전에 테스트할 수 있습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>가상 테스트 환경 자동 생성</li><li>실제 데이터 상태 변화 검증</li><li>오류 상황 재현 및 수정 제안</li></ul>
+  <p class="price">가격 · 무료+유료</p>
+  <h3>만든 사람의 소개</h3><div class="maker">기존 AI 에이전트 테스트는 가짜 사용자와 주고받은 대화 텍스트만 검사하므로 실제 환불이나 데이터 수정이 제대로 처리되었는지 파악하기 힘들었습니다. 자율주행차 시뮬레이션 개발 경험을 바탕으로, 코드를 분석해 에이전트의 데이터와 도구를 복제하는 디지털 트윈 가상 환경 서비스 Plurai를 개발했습니다. 단순 대화 텍스트가 아니라 가상 환경 안에서 실제로 작업이 실행되었는지를 자동으로 평가하여 시스템 오류율을 82%까지 낮춰 줍니다.</div>
+  <h3>사람들 반응 · 댓글 139개</h3><p style="margin:0 0 6px">텍스트 대화 스크립트만 검사하는 방식에서 벗어나 실제 데이터 상태 변화까지 자동으로 검증한다는 점에 긍정적인 평이 많습니다.</p><ul class="good"><li>실제 상태 변화 기반 버그 검증</li><li>명령어 한 줄로 손쉬운 설치</li><li>실제 동작을 보여주는 데모 영상</li></ul><ul class="bad"><li>가상 사용자의 현실적 엉뚱한 행동 재현 한계</li><li>외부 API 연동 시 별도 설정 필요성</li></ul>
+  <h3>한국 시장</h3><div class="kr">AI 에이전트의 작동 상태와 데이터 변화를 시뮬레이션 환경에서 자동으로 검증하는 개발자 도구입니다. 국내에서도 LLM 에이전트를 도입하는 기업이 늘고 있어 유용하게 활용할 수 있습니다.</div>
+  <p class="price" style="margin-top:12px">API · 개발자 도구 · 인공지능</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/plurai?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/ZBKQ4BKXEJCORU?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p2">
+ <div class="shots"><img src="https://ph-files.imgix.net/fe3851f1-ce9b-4584-9047-1d6f998d58c9.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/bddbf455-14ae-4bb8-9a15-e45fc198053d.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/ce9f6a0d-6b84-43ac-a378-6068525bbc7d.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>02위 · 11.12</span><span>▲ 추천 351</span><span>💬 댓글 61</span><span class="chip c-드묾">드묾</span></div>
+  <h2>YouArt Desktop App</h2>
+  <p class="what">영상 크리에이터나 마케팅 팀이 로컬 프로젝트 파일과 업무 대화 채널을 연결하면, AI가 After Effects나 CapCut 같은 영상 편집 프로그램을 직접 조작합니다. 제품 홍보 영상이나 숏폼 제작 등 영상 편집 전 과정을 알아서 처리합니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>로컬 영상 편집 프로그램 직접 조작</li><li>업무 플랫폼 대화 맥락 통합</li><li>최저가 AI 모델 자동 라우팅</li></ul>
+  <p class="price">가격 · 무료+유료</p>
+  <h3>만든 사람의 소개</h3><div class="maker">웹 브라우저 기반 AI 도구는 매번 파일을 업로드하고 다운로드해야 하며 작업 맥락이 끊기는 단점이 있었습니다. 이를 해결하고자 사용자의 데스크톱 환경에서 프로젝트 폴더와 편집 프로그램(After Effects, CapCut 등)에 직접 접근하는 에이전트를 개발했습니다. Slack이나 Gmail 등 팀 대화 데이터까지 통합해 신제품 홍보 영상부터 숏폼 콘텐츠까지 전체 제작 과정을 자동화합니다.</div>
+  <h3>사람들 반응 · 댓글 61개</h3><p style="margin:0 0 6px">After Effects 같은 실제 디자인 프로그램을 직접 제어하는 방식과 효율적인 생성 비용에 기대가 높지만, 외부 도구 연동 방식에 대한 궁금증도 존재합니다.</p><ul class="good"><li>데스크톱 편집 프로그램 직접 제어</li><li>합리적인 영상 생성 비용</li><li>슬랙·지메일 맥락 자동 반영</li></ul><ul class="bad"><li>초보자의 노드/워크플로우 편집 난이도 우려</li><li>외부 SNS 예약 발행 도구 연동 부재</li></ul>
+  <h3>한국 시장</h3><div class="kr">컴퓨터에 설치된 영상 편집 프로그램을 직접 제어하며 작업하는 데스크톱 AI 도구로, 국내 숏폼 제작사와 마케팅 대행사의 생산성을 높이는 데 유용합니다.</div>
+  <p class="price" style="margin-top:12px">마케팅 · 인공지능 · 비디오</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/youart?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/5TX6YWUYYRHQUE?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p3">
+ <div class="shots"><img src="https://ph-files.imgix.net/launch-image-uploads/77aaab11-a6a2-4522-a035-503cacbde4c0/b68231de4b983adb593591d7645560f354f0522bd861c76952f64ce7d7ffae4f.jpeg?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/launch-image-uploads/bd32e17a-b332-41fd-8369-92df208082b3/ca8754cba3bc346cee6af49c1049e9f7085d3c7eaea1fe29c4a95be05f51fcde.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/launch-image-uploads/54f2a438-adb6-42a9-a3a7-e7fd837bb374/99d81d7ea50cbb71759b504e2256ec607c80cb1a0afa8c05d54df19b501b6ef8.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>03위 · 11.12</span><span>▲ 추천 299</span><span>💬 댓글 12</span><span class="chip c-있음">있음</span></div>
+  <h2>Claude Meetings</h2>
+  <p class="what">Google Meet 화상 회의에 AI Claude를 참석자로 초대하면 실시간으로 회의록을 정리하고 질문에 답변해 줍니다. 회의 중에 기획 문서나 화이트보드를 바로 생성해 참석자들이 함께 수정하며 업무를 진행할 수 있습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>실시간 회의록 및 액션아이템 작성</li><li>대화 중 라이브 문서·화이트보드 생성</li><li>연동 도구 기반 실시간 데이터 조회</li></ul>
+  <p class="price">가격 · 유료</p>
+  <h3>만든 사람의 소개</h3><div class="maker">Anthropic이 선보인 Claude Meetings는 화상 회의에 AI가 실제 참석자 형태로 들어와 대화를 이해하는 베타 기능입니다. 회의 중 음성이나 채팅으로 질문하면 연동된 도구에서 관련 데이터를 찾아 답해 주며, 대화 중 기획 문서나 화이트보드 캔버스를 즉시 생성해 팀원들이 실시간으로 공동 편집할 수 있습니다. 회의 종료 후 작성된 노트와 결과물은 Claude 회의 전용 페이지에 자동으로 저장됩니다.</div>
+  <h3>사람들 반응 · 댓글 12개</h3><p style="margin:0 0 6px">회의 중 실시간 문서 작성과 데이터 조회가 가능하다는 점에 긍정적인 반응이 많으나, 개인 요금제 미지원 및 기존 녹음/요약 도구를 대체할 수 있을지에 관한 관심이 높습니다.</p><ul class="good"><li>회의 중 실시간 문서 및 화이트보드 공동 편집</li><li>연동 데이터를 활용한 즉각적 질의응답</li><li>자동 회의록 및 액션아이템 작성</li></ul><ul class="bad"><li>개인 요금제(Max/Pro) 미지원</li><li>1:1 화상 대화 시 AI 참석의 어색함</li></ul>
+  <h3>한국 시장</h3><div class="kr">Google Meet 회의에 AI가 직접 참석해 회의록을 작성하고 관련 문서를 만들어 주는 서비스입니다. 국내에는 클로바노트나 릴리스 AI 같은 회의록 요약 도구가 있지만, 실시간 캔버스 공동 작업 기능에서 차별점을 갖습니다.</div>
+  <p class="price" style="margin-top:12px">생산성 · 회의 · 인공지능</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/claude?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/BBCWQILYWRBAP6?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p4">
+ <div class="shots"><img src="https://ph-files.imgix.net/5be2f62e-216d-4391-8ef5-5a94068550a0.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/302bd8df-cf4b-48e5-9017-a104b1c0d7eb.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/705870bc-d968-43cb-b8e1-0dca748658b5.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>04위 · 11.12</span><span>▲ 추천 294</span><span>💬 댓글 36</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Omnigraph</h2>
+  <p class="what">자체 클라우드 저장소(S3)에 이 데이터베이스를 구축하고 AI 에이전트들을 연결하면, 에이전트가 공통 지식을 안전하게 공유할 수 있습니다. Git처럼 에이전트별로 독립된 작업 브랜치를 제공하므로 데이터를 무단으로 덮어쓰지 않고 검토 후 안전하게 병합합니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>Git 방식 분기 및 병합 관리</li><li>단일 쿼리 하이브리드·그래프 검색</li><li>자체 S3 스토리지를 통한 지식 보관</li></ul>
+  <p class="price">가격 · 무료</p>
+  <h3>만든 사람의 소개</h3><div class="maker">기업 내부에서 여러 AI 에이전트가 공유 데이터 없이 개별 작동하면 잘못되거나 엇갈린 정보를 기억해 오작동할 위험이 큽니다. 이를 막기 위해 에이전트가 기존 데이터를 덮어쓰지 않고 각자의 브랜치에서 작업한 뒤 검토를 거쳐 메인 데이터에 병합하는 오픈소스 그래프 DB를 개발했습니다. 자체 S3 저장소에 지식을 안전하게 보관하며, 의미 검색·키워드 검색·관계망 탐색을 쿼리 한 번으로 빠르게 수행합니다.</div>
+  <h3>사람들 반응 · 댓글 36개</h3><p style="margin:0 0 6px">에이전트 간 데이터 충돌을 막아주는 Git 스타일의 브랜치 모델과 오픈소스 제공에 개발자들의 긍정적인 반응이 이어지고 있습니다.</p><ul class="good"><li>Git 형태의 에이전트 데이터 분기 및 검토</li><li>자체 S3 스토리지 활용으로 데이터 보안 확보</li><li>검색 및 데이터 조회 성능 우수</li></ul><ul class="bad"><li>기존 RDBMS/NoSQL 대비 명확한 도입 이점 부족</li><li>에이전트 간 데이터 충돌 시 처리 방식에 관한 의문</li></ul>
+  <h3>한국 시장</h3><div class="kr">여러 AI 에이전트가 데이터 덮어쓰기 위험 없이 공유 지식을 관리하도록 Git 개념을 도입한 그래프 데이터베이스입니다. 국내 기업의 AI 에이전트 개발 시 지식 관리 인프라로 활용하기 좋습니다.</div>
+  <p class="price" style="margin-top:12px">오픈소스 · 개발자 도구 · 데이터베이스</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/omnigraph?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/FZKF5GOW432WWF?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p5">
+ <div class="shots"><img src="https://ph-files.imgix.net/02464a1f-75e1-4cb7-a8ef-aa56856f0203.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/7119424f-3738-4085-a7ce-b73a07d0a9f7.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/e55dfbf5-afd0-4fbf-b49c-f19938c62a1e.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>05위 · 11.12</span><span>▲ 추천 281</span><span>💬 댓글 35</span><span class="chip c-드묾">드묾</span></div>
+  <h2>⌘+L</h2>
+  <p class="what">웹사이트 코드에 짧은 스크립트만 넣으면 마케터나 디자이너가 Figma 작업하듯 화면에서 텍스트나 여백을 직접 클릭해 수정할 수 있습니다. 수정을 마치면 AI 에이전트가 코드를 알아서 고치고 개발자가 즉시 반영할 수 있는 GitHub PR을 작성해 줍니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>Figma 방식 웹사이트 시각 편집</li><li>AI 에이전트 기반 코드 자동 수정</li><li>A/B 테스트 및 트래픽 시각화</li></ul>
+  <p class="price">가격 · 무료+유료</p>
+  <h3>만든 사람의 소개</h3><div class="maker">웹사이트의 단순 텍스트나 여백 하나를 수정하느라 터미널을 열고 코드를 고쳐야 했던 번거로움을 줄이기 위해 제작했습니다. ⌘+L 스크립트 태그를 웹사이트에 설치하면 Figma에서 작업하듯 화면의 문구, 글자 크기, 여백 등을 바로 수정할 수 있습니다. 작업 후에는 백그라운드 코딩 에이전트가 실제 개발 코드의 GitHub PR로 자동 변환해 줍니다.</div>
+  <h3>사람들 반응 · 댓글 35개</h3><p style="margin:0 0 6px">개발 요청 없이 마케터가 웹페이지를 직접 수정하고 코드 PR까지 받아볼 수 있다는 아이디어에 긍정적인 평가가 많습니다.</p><ul class="good"><li>터미널 작업 없는 시각적 웹사이트 수정</li><li>개발자용 코드 변경 요청(PR) 자동 생성</li><li>A/B 테스트 및 트래픽 시각화 기능</li></ul><ul class="bad"><li>공통 버튼 수정 시 전역 적용 여부 선택 불가 우려</li><li>이벤트 트래킹 추적 코드 꼬임 가능성</li></ul>
+  <h3>한국 시장</h3><div class="kr">Figma처럼 웹 화면에서 요소와 텍스트를 직접 수정하면 AI가 실제 개발 코드로 변환해 주는 도구입니다. 국내 마케터의 랜딩페이지 수정 업무 시간을 획기적으로 줄여줄 수 있습니다.</div>
+  <p class="price" style="margin-top:12px">디자인 도구 · 생산성 · 개발자 도구</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/l?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/KCTM2ZI233ZMBS?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p6">
+ <div class="shots"><img src="https://ph-files.imgix.net/a079c372-2373-4715-ad6e-311036e49255.jpeg?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/126a396d-b253-4146-86e7-0f55a533a6d8.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/97d1359d-e039-47bb-9762-4ddf452aea6b.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>06위 · 11.12</span><span>▲ 추천 184</span><span>💬 댓글 26</span><span class="chip c-있음">있음</span></div>
+  <h2>Spacefast by Automattic</h2>
+  <p class="what">ChatGPT나 Claude 등 평소 쓰던 AI를 연결하면 복잡한 서버 설정 없이 웹사이트나 내부 툴을 인터넷에 즉시 배포할 수 있습니다. 호스팅, 데이터베이스, 도메인 연결을 자동으로 처리하며 링크를 공유해 팀원들에게 피드백도 수집할 수 있습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>AI 에이전트 연동 자동 배포</li><li>호스팅 및 DB·도메인 자동 관리</li><li>웹페이지 내 직접 피드백 수집</li></ul>
+  <p class="price">가격 · 무료+유료</p>
+  <h3>만든 사람의 소개</h3><div class="maker">AI의 코딩 능력은 크게 발전했으나 작성된 결과를 인터넷에 배포하고 운영하려면 서버나 데이터베이스 설정 등 번거로운 절차가 필요합니다. WordPress.com의 제작사 Automattic은 AI 에이전트가 만든 코드를 프롬프트 한 줄로 즉시 배포하는 Spacefast를 개발했습니다. 사내 대시보드, 마케팅 페이지, 웹 앱을 쉽게 띄우고 화면 위에서 팀원들과 피드백을 주고받을 수 있습니다.</div>
+  <h3>사람들 반응 · 댓글 26개</h3><p style="margin:0 0 6px">복잡한 과정 없이 AI 프롬프트만으로 몇 초 만에 웹사이트를 배포하고 구동할 수 있어 매우 유용하다는 호평이 많습니다.</p><ul class="good"><li>AI 프롬프트 입력만으로 즉시 웹 배포</li><li>다양한 AI 에이전트 프레임워크 호환</li><li>넉넉한 무료 호스팅 정책</li></ul><ul class="bad"><li>주요 AI 플랫폼 자체 기능과의 경쟁 우려</li><li>기존 GitHub 저장소 빌드 설정과의 호환성 의문</li></ul>
+  <h3>한국 시장</h3><div class="kr">AI가 생성한 코드나 웹 서비스를 자동으로 호스팅하고 배포하는 도구입니다. Vercel이나 Netlify와 비슷하지만 AI 에이전트 프롬프트를 통한 배포에 특화되어 있습니다.</div>
+  <p class="price" style="margin-top:12px">개발자 도구 · 인공지능 · GitHub</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/spacefast-by-automattic?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/O2SFBIBKNXJMBD?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p7">
+ <div class="shots"><img src="https://ph-files.imgix.net/97ea1cfc-cdc7-4ee8-889e-ad3fc5852ae5.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/18ea67af-1782-409e-8058-bb1df81bb4ce.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/008ee163-0934-4cf3-8a4c-361d960ae5e1.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>07위 · 11.12</span><span>▲ 추천 150</span><span>💬 댓글 4</span><span class="chip c-있음">있음</span></div>
+  <h2>Adobe AI Assistant</h2>
+  <p class="what">디자이너나 영상 편집자가 Adobe 프로그램에서 원하는 변경 사항을 대화로 지시하면 AI가 복잡한 작업을 대신 수행합니다. 레이어 수정, 숏폼 영상 재편집, 일러스트 색상 일괄 변경 등 여러 앱을 넘나드는 작업도 명령어 한 줄로 완성할 수 있습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>자연어 명령 기반 복수 앱 작업 실행</li><li>Photoshop 비파괴 레이어 자동 수정</li><li>Premiere·After Effects 영상 일괄 편집</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">크리에이터가 반복 클릭과 단순 메뉴 작업에 들이는 시간을 절감하도록 Adobe 생태계 전체를 연결하는 AI 어시스턴트를 출시했습니다. Photoshop, Premiere Pro, Illustrator 등에서 자연어 입력만으로 무드보드 생성, 자막 검수, 숏폼 화면 재배치 등을 일괄 처리합니다. 작업 실행 전 사용자가 계획을 미리 확인하고 승인·취소할 수 있어 주도적으로 제어할 수 있습니다.</div>
+  <h3>사람들 반응 · 댓글 4개</h3><p style="margin:0 0 6px">Photoshop과 Premiere Pro를 넘나드는 멀티 앱 자동화에 관심이 높지만, 단순 반복 작업을 넘어선 창의적 영역에서의 실효성에는 논의가 있습니다.</p><ul class="good"><li>여러 Adobe 프로그램 간 연동 자동화</li><li>작업 실행 전 사전 계획 검토 지원</li><li>반복 레이어 및 영상 작업 시간 단축</li></ul><ul class="bad"><li>복수 앱 작업 시 특정 단계만 되돌리기 어려움</li><li>기능 추가 위주 업데이트에 대한 일부 피로감</li></ul>
+  <h3>한국 시장</h3><div class="kr">Adobe 프로그램 내에서 대화형으로 그래픽 및 영상 편집을 자동화해 주는 기능입니다. 기존 Adobe Creative Cloud 사용자 생태계에 즉시 적용되는 강력한 전용 도구입니다.</div>
+  <p class="price" style="margin-top:12px">디자인 도구 · 인공지능 · 그래픽 디자인</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/adobe-ai-assistant?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/JNEKEVQ6BLFATT?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p8">
+ <div class="shots"><img src="https://ph-files.imgix.net/launch-image-uploads/597f2038-8c5b-458f-b73f-a749be31bc69/6bee3448a5df7fd4a3f77d473b98ee8dbacc568015ea070f2973a42dcd283bfc.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/launch-image-uploads/163abdc9-50e4-4fc5-bc30-41df0f5d8d56/3486b2703567b103720f59a16399096ce13c745f1877af38622f841668d32140.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/launch-image-uploads/a686cc3c-86f3-406e-9f74-149bd7ba789f/1b82c681deaeac80b2c723a67f79291c5fa4746dcf8e2fa55c33ef0d9f065192.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>08위 · 11.12</span><span>▲ 추천 140</span><span>💬 댓글 13</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Harness Memory</h2>
+  <p class="what">AI 개발자가 다양한 코딩 에이전트(Claude Code, Codex 등)를 연동해 사용하면 에이전트가 이전 대화와 작업 맥락을 잊지 않고 기억합니다. 다른 AI 도구로 전환하더라도 기존에 저장된 프로젝트 규칙과 메모를 그대로 공유해 일관되게 작업할 수 있습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>이종 AI 에이전트 간 장기 기억 공유</li><li>사용자별 기억 격리 및 정밀 권한 제어</li><li>다양한 기억 엔진(Mem0 등) 선택 지원</li></ul>
+  <p class="price">가격 · 무료+유료</p>
+  <h3>만든 사람의 소개</h3><div class="maker">Claude Code에서 Codex로 도구를 옮길 때마다 AI가 기존 작업 맥락을 잊어버리는 문제를 해결하기 위해 개발했습니다. 외부 연동 모듈이 아닌 내장형 장기 기억 시스템을 구축하여, 도구나 세션이 변경되어도 이전 작업에서 학습한 규칙과 정보를 유지하고 공유합니다. 사용자별로 기억 영역과 권한을 완전히 분리해 안전한 기업용 AI 에이전트를 만들 수 있습니다.</div>
+  <h3>사람들 반응 · 댓글 13개</h3><p style="margin:0 0 6px">에이전트 환경이 바뀌어도 이전 기억을 유지·공유할 수 있다는 점과 오픈소스 제공 방식에 많은 개발자가 호평을 보냈습니다.</p><ul class="good"><li>Claude Code와 Codex 간 지식 공유 가능</li><li>사용자별 기억 분리 및 정밀 권한 제어</li><li>오픈소스 제공에 따른 우수한 확장성</li></ul><ul class="bad"><li>삭제된 파일이나 코드를 참조하는 구 기억의 갱신 문제</li><li>시간 경과에 따른 데이터 비대화 및 정리(Pruning) 기능 우려</li></ul>
+  <h3>한국 시장</h3><div class="kr">여러 LLM 에이전트 간 지식을 공유하고 기억을 유지하는 오픈소스 메모리 레이어입니다. 국내 생성형 AI 에이전트 시장에서 매력적인 지식 관리 인프라가 될 수 있습니다.</div>
+  <p class="price" style="margin-top:12px">오픈소스 · 개발자 도구 · 인공지능</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/epsilla?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/UBLUY4WRXJJWPR?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p9">
+ <div class="shots"><img src="https://ph-files.imgix.net/c493470c-10fe-456e-8d7a-2c0f64e4fb5e.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/fa18295c-8a83-4e81-a230-744329c21cec.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/1d951359-4710-4a45-a58f-273fe15d6fa8.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>09위 · 11.12</span><span>▲ 추천 132</span><span>💬 댓글 20</span><span class="chip c-드묾">드묾</span></div>
+  <h2>three.dev</h2>
+  <p class="what">AI 서비스 개발팀이 명령어 한 줄로 서비스를 연결하면 실제 유저 대화에서 발생한 오답 및 오류를 자동으로 찾아냅니다. 에러 코드 없이 잘못된 정보를 전달하는 오작동을 모아 심각도에 따라 정렬하고, 코딩 AI가 버그를 즉시 고칠 수 있도록 데이터와 근거를 제공합니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>실시간 트래픽 기반 오답 자동 감지</li><li>오류 패턴 심각도별 자동 그룹화</li><li>MCP 연동을 통한 자동 수정안 작성</li></ul>
+  <p class="price">가격 · 무료+유료</p>
+  <h3>만든 사람의 소개</h3><div class="maker">AI 서비스는 시스템 튕김 현상(Crash) 없이 잘못된 정보를 사실처럼 응답하는 &#x27;조용한 오작동&#x27; 문제를 겪곤 합니다. three.dev는 실제 유저 대화 트래픽을 백그라운드에서 분석해 오답 패턴을 탐지하고 중요도별로 분류합니다. 수집된 오류 데이터를 MCP 표준으로 코딩 에이전트에 전달하여 버그 수정 코드를 바로 생성하게 해 줍니다.</div>
+  <h3>사람들 반응 · 댓글 20개</h3><p style="margin:0 0 6px">로그에 남지 않는 AI의 환각(할루시네이션)이나 은밀한 오답을 실시간 대화 트래픽에서 탐지하는 방식이 좋은 평가를 받고 있습니다.</p><ul class="good"><li>에러 없이 발생하는 오답 자동 탐지</li><li>명령어 한 줄로 완료되는 간편한 설치</li><li>코딩 에이전트 연동을 통한 자동 수정 코드 생성</li></ul><ul class="bad"><li>기준 문서 없이 오답을 판별하는 방식에 대한 의구심</li><li>텍스트 외 실제 외부 액션 수행 오작동 탐지 가능 여부</li></ul>
+  <h3>한국 시장</h3><div class="kr">운영 중인 AI 서비스의 환각(할루시네이션) 현상과 조용한 오류를 실시간 트래픽에서 잡아내는 분석 도구입니다. 국내 LLM 챗봇 및 에이전트 도입 기업의 품질 모니터링에 필수적입니다.</div>
+  <p class="price" style="margin-top:12px">분석 · 개발자 도구 · 인공지능</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/three-dev?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/RV5447RLDSTXAS?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p10">
+ <div class="shots"><img src="https://ph-files.imgix.net/23c3245a-88b8-47c2-bcac-4227bf4763fa.jpeg?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/7776da9f-0bfd-472a-8c2f-1830d49ca352.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/8d47bbee-8c2c-42f1-855b-ab53ec465681.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>10위 · 11.12</span><span>▲ 추천 128</span><span>💬 댓글 12</span><span class="chip c-있음">있음</span></div>
+  <h2>Nameshot</h2>
+  <p class="what">Mac 사용자 바탕화면에 무분별하게 쌓인 스크린샷 파일명을 이미지 내용에 맞게 자동으로 변경해 줍니다. Apple의 온디바이스 AI 기술로 모든 작업을 기기 내부에서 처리하므로 개인정보 유출 걱정이 없습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>이미지 내용 분석 기반 자동 파일명 변경</li><li>Apple Intelligence 기반 온디바이스 처리</li><li>바탕화면 스크린샷 일괄 정돈</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">바탕화면에 의미 없는 스크린샷 파일이 수백 개씩 쌓여 번잡해지는 문제를 풀고자 제작했습니다. Apple Intelligence 기술로 이미지 속 텍스트와 맥락을 분석해 적절한 파일 이름으로 알아서 바꿔 줍니다. 모든 작업이 외부 서버 없이 Mac 내부(온디바이스)에서 이뤄져 안심하고 스크린샷을 정돈할 수 있습니다.</div>
+  <h3>사람들 반응 · 댓글 12개</h3><p style="margin:0 0 6px">매번 파일명을 수정해야 했던 번거로움을 온디바이스 AI로 안전하게 해결했다는 점에서 긍정적인 호응을 얻고 있습니다.</p><ul class="good"><li>서버 전송 없는 온디바이스 개인정보 보호</li><li>지저분한 스크린샷 파일명 자동 정리</li><li>직관적이고 간편한 유틸리티</li></ul><ul class="bad"><li>외국어 텍스트 인식 정확도에 대한 문의</li><li>과거에 저장해 둔 스크린샷 일괄 변경 지원 여부</li></ul>
+  <h3>한국 시장</h3><div class="kr">macOS 환경에서 스크린샷 파일명을 AI로 자동 정돈하는 유틸리티 앱입니다. Hazel이나 CleanShot X 같은 Mac 생산성 도구 생태계에서 비정형 파일 정리용으로 활용하기 좋습니다.</div>
+  <p class="price" style="margin-top:12px">Mac · 디자인 도구 · 생산성</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/nameshot-2?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/OHQD6DOWBSPVPX?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article><div class="day">11.13 · 미국 서부</div>
+<article id="p11">
+ <div class="shots"><img src="https://ph-files.imgix.net/f80293c1-6a81-4582-b9be-209f30c49399.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/990885d6-e992-47ea-a1e5-c7735599cfb9.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/e4194cb8-1c70-4aad-87af-0f7669f83927.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>01위 · 11.13</span><span>▲ 추천 395</span><span>💬 댓글 95</span><span class="chip c-있음">있음</span></div>
+  <h2>Templify AI</h2>
+  <p class="what">콘텐츠 크리에이터나 소상공인이 원본 사진과 동영상 클립을 넣으면, AI가 타임라인 편집 없이 릴스나 틱톡용 숏폼 영상을 자동으로 만들어 줍니다. 미리 브랜드 색상과 글꼴을 설정해 두면 1,300개 이상의 템플릿에 바로 적용되어 마케팅 콘텐츠를 빠르게 제작할 수 있습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>1,300개 이상의 템플릿 제공</li><li>비트 맞춤 화면 전환 및 자동 자막</li><li>AI 배경 제거 및 브랜드 키트</li></ul>
+  <p class="price">가격 · 무료 (Pro 구독 선택 가능)</p>
+  <h3>만든 사람의 소개</h3><div class="maker">2022년 우크라이나에서 템플릿 30개로 출발한 Templify는 누적 다운로드 100만 회를 넘서며 성장했습니다. 전문 편집 기술이 없어도 누구나 크리에이터 생태계에서 자리 잡을 수 있게 돕는 것을 목표로 합니다. 복잡한 타임라인이나 편집 패널을 배울 필요 없이 누구나 브랜드와 콘텐츠를 손쉽게 만들 수 있습니다. 최근에는 브랜드 색상과 글꼴을 저장하는 브랜드 키트, 템플릿 확장, Mac 버전, AI 스튜디오 등 다양한 기능을 추가했습니다.</div>
+  <h3>사람들 반응 · 댓글 95개</h3><p style="margin:0 0 6px">템플릿과 브랜드 키트로 숏폼 영상 제작 시간을 크게 줄여준다는 평가가 많으며, 다른 플랫폼 지원 여부에도 관심이 높습니다.</p><ul class="good"><li>브랜드 키트로 디자인 재작업 감소</li><li>빠른 숏폼 영상 제작 속도</li><li>다양한 템플릿 제공</li></ul><ul class="bad"><li>자체 음악 사용 기능 부족</li><li>안드로이드 및 윈도우 미지원</li></ul>
+  <h3>한국 시장</h3><div class="kr">비타(VITA)나 블로(VLLO)처럼 모바일 숏폼 영상 및 템플릿 편집을 지원하는 국내 서비스가 활발히 운영되고 있습니다.</div>
+  <p class="price" style="margin-top:12px">소셜 미디어 · 사진 · 사진 및 동영상</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/templify?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/T53GXHFXDGAANJ?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p12">
+ <div class="shots"><img src="https://ph-files.imgix.net/2c0f370a-fa3b-4fae-a052-6b5bfe6504dd.gif?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/e4cd8cc6-5c83-488f-8af4-2bf0d8505f3a.gif?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/74d8f437-955c-411d-a1cc-097eb76abddf.gif?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>02위 · 11.13</span><span>▲ 추천 312</span><span>💬 댓글 73</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Filament by Galaxy</h2>
+  <p class="what">데이터 엔지니어나 개발자가 기존 데이터베이스를 연결하면, 기업 데이터를 데이터 웨어하우스나 데이터 레이크로 빠르고 안전하게 복제해 줍니다. 터미널 명령어나 AI 에이전트로 실시간 데이터 변경 사항(CDC)을 추적하며, 데이터 손실 없이 이전할 수 있습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>전체 및 증분 데이터 복제</li><li>실시간 변경 데이터 캡처(CDC)</li><li>Go 앱 내장 및 독립 실행</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">Filament는 데이터 웨어하우스로 데이터를 옮길 때 발생하는 지연 시간과 비용 문제를 해결하기 위해 개발된 오픈소스 Go 엔진입니다. 기존 도구보다 데이터 복제 지연 시간을 최대 15배 단축하여 뛰어난 속도와 신뢰성을 자랑합니다. AI 시대의 흐름에 맞춰 개발자가 터미널이나 에이전트로 손쉽게 연동할 수 있게 설계했습니다. 기업 데이터의 확장성 문제나 재해 복구 환경에서도 안정적으로 파이프라인을 구축할 수 있습니다.</div>
+  <h3>사람들 반응 · 댓글 73개</h3><p style="margin:0 0 6px">개발자 커뮤니티에서는 오픈소스 기반의 커넥터 확장성과 빠른 데이터 복제 성능에 큰 관심을 보이고 있습니다.</p><ul class="good"><li>오픈소스 기반의 빠른 성능</li><li>쉬운 커넥터 기여 방식</li><li>Go 기반의 높은 안정성</li></ul><ul class="bad"><li>사용자 실제 활용 사례(Use Case) 설명 부족</li></ul>
+  <h3>한국 시장</h3><div class="kr">CDC 기반 데이터 파이프라인과 데이터 복제 분야는 Fivetran이나 Airbyte 등 해외 도구가 주류를 이루고 있어, 국내 전문 오픈소스 솔루션 영역에서 새로운 기회가 될 수 있습니다.</div>
+  <p class="price" style="margin-top:12px">오픈소스 · 개발자 도구 · 데이터</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/galaxy?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/2VIY3N6BRL2YSZ?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p13">
+ <div class="shots"><img src="https://ph-files.imgix.net/launch-image-uploads/77aaab11-a6a2-4522-a035-503cacbde4c0/b68231de4b983adb593591d7645560f354f0522bd861c76952f64ce7d7ffae4f.jpeg?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/launch-image-uploads/bd32e17a-b332-41fd-8369-92df208082b3/ca8754cba3bc346cee6af49c1049e9f7085d3c7eaea1fe29c4a95be05f51fcde.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/launch-image-uploads/54f2a438-adb6-42a9-a3a7-e7fd837bb374/99d81d7ea50cbb71759b504e2256ec607c80cb1a0afa8c05d54df19b501b6ef8.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>03위 · 11.13</span><span>▲ 추천 299</span><span>💬 댓글 12</span><span class="chip c-있음">있음</span></div>
+  <h2>Claude Meetings</h2>
+  <p class="what">Google Meet 화상 회의에 Claude AI를 참석시키면, 실시간 대화를 듣고 회의록과 할 일 목록을 정리해 줍니다. 대화 중 과거 데이터를 물어보면 연동된 업무 도구에서 찾아 답변하며, 필요한 기획 문서나 화이트보드 작업물도 회의 도중에 바로 생성해 줍니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>실시간 회의록 및 할 일 작성</li><li>음성·채팅 질문 답변 및 정보 검색</li><li>실시간 문서 및 화이트보드 생성</li></ul>
+  <p class="price">가격 · Team 및 Enterprise 요금제 포함 (베타)</p>
+  <h3>만든 사람의 소개</h3><div class="maker">Anthropic이 선보인 Claude Meetings는 화상 회의에 AI가 팀원으로 직접 참여하는 베타 기능입니다. 단순한 회의록 작성을 넘어, 대화 중에 필요한 문서나 화이트보드 작업물을 실시간으로 생성하고 동시 편집할 수 있습니다. 과거 프로젝트 예산 등을 음성으로 질문하면 연동된 도구에서 정보를 찾아 회의 채팅창에 즉시 보여 줍니다. 회의가 끝난 뒤에도 작성된 노트, 녹취록, 작업물이 Claude에 차곡차곡 기록되어 쉽게 추적할 수 있습니다.</div>
+  <h3>사람들 반응 · 댓글 12개</h3><p style="margin:0 0 6px">회의 진행 중 실시간으로 문서나 작업물을 만들어 내는 기능에 호평이 이어지고 있으나, 개인 요금제 미지원에는 아쉬움을 나타냅니다.</p><ul class="good"><li>대화 중 실시간 문서/화이트보드 생성</li><li>자동 회의록 및 실행 항목 정리</li><li>사내 도구 연동 정보 검색</li></ul><ul class="bad"><li>Team/Enterprise 요금제 전용(개인 플랜 미지원)</li><li>1:1 회의 시 AI 참여자의 존재감에 대한 부담</li></ul>
+  <h3>한국 시장</h3><div class="kr">클로바노트(CLOVA Note)나 다굴(dagool) 같은 국내 AI 회의록 서비스가 있지만, 실시간 협업 문서 생성 기능까지 갖춘 화상 회의 에이전트는 차별화된 장점이 됩니다.</div>
+  <p class="price" style="margin-top:12px">생산성 · 회의 · 인공지능</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/claude?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/BBCWQILYWRBAP6?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p14">
+ <div class="shots"><img src="https://ph-files.imgix.net/a584c2af-337f-410a-aa8d-8b227274ef65.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/b3aad702-145b-4079-837d-c36e71101c05.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/912d310c-1bdb-4426-bdd3-cef4b61e8e4b.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>04위 · 11.13</span><span>▲ 추천 225</span><span>💬 댓글 14</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Replicate</h2>
+  <p class="what">개발자나 웹 디자이너가 기존 Webflow나 Framer 웹사이트 주소를 입력하면, 원본과 99.98% 동일한 NextJS 웹 애플리케이션 코드로 자동 전환해 줍니다. 복잡한 이미지 CDN, 블로그 CMS 데이터, 스크립트를 깔끔하게 정리해 사용자의 GitHub 저장소로 코드를 올려 줍니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>NextJS 앱 1:1 자동 복제</li><li>CMS 데이터 및 이미지 CDN 이전</li><li>GitHub 저장소 자동 코드 커밋</li></ul>
+  <p class="price">가격 · 무료</p>
+  <h3>만든 사람의 소개</h3><div class="maker">노코드 웹사이트 빌더의 제약 때문에 AI 코딩 에이전트를 제대로 활용하지 못하는 문제를 해결하고자 개발된 무료 도구입니다. 경량화된 JSON 조각, 복잡한 이미지 CDN, CMS 컬렉션을 정교하게 분석해 원본과 99.98% 동일한 NextJS 앱으로 전환합니다. URL만 입력하면 웹사이트를 그대로 복제하여 GitHub에 전체 소스 코드를 생성해 줍니다. 기존 빌더에 얽매이지 않고 코드를 자유롭게 소유하며 수정할 수 있습니다.</div>
+  <h3>사람들 반응 · 댓글 14개</h3><p style="margin:0 0 6px">웹사이트 빌더를 이전할 때 드는 수작업을 크게 줄여준다는 점에서 환영받고 있지만, SEO 유지 및 복잡한 애니메이션 변환에 관한 문의도 이어지고 있습니다.</p><ul class="good"><li>완전 무료 제공</li><li>NextJS 및 GitHub 연동으로 코드 소유 가능</li><li>웹 빌더 이탈 시간 획기적 단축</li></ul><ul class="bad"><li>복잡한 애니메이션 변환 완벽성 우려</li><li>SEO 및 URL 구조 이전 검증 필요</li></ul>
+  <h3>한국 시장</h3><div class="kr">아임웹이나 노션 기반 노코드 빌더에서 개발자용 프레임워크(Next.js)로 자동 이전해 주는 국내 전문 마이그레이션 서비스는 드뭅니다.</div>
+  <p class="price" style="margin-top:12px">웹사이트 빌더 · GitHub</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/replicate-10?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/RENYHO4NIPEVIS?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p15">
+ <div class="shots"><img src="https://ph-files.imgix.net/d41db12c-4503-409e-ad38-03354b229160.jpeg?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/53b6a49b-f132-4908-b26b-26a1bdd24f6d.jpeg?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/032a4d24-b94b-45a2-b42d-6972a9c73196.jpeg?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>05위 · 11.13</span><span>▲ 추천 175</span><span>💬 댓글 44</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Trainn MCP</h2>
+  <p class="what">제품팀이나 고객 교육 담당자가 화면 녹화 파일이나 설명 노트를 ChatGPT, Claude 등 AI 채팅에 입력하면, AI 음성과 자막이 포함된 제품 시연 영상과 도움말 문서를 자동으로 만들어 줍니다. 제품 기능이 바뀔 때도 대화를 통해 이전 영상과 문서를 찾아 한 번에 갱신할 수 있으며, 모든 결과물은 초안으로 제공되어 사전 검토가 가능합니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>화면 녹화 기반 AI 제품 영상 제작</li><li>단계별 도움말 문서 및 교육 과정 생성</li><li>제품 변경 시 기존 콘텐츠 자동 갱신</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">빠른 제품 업데이트 속도를 고객 교육팀이 쫓아가지 못해 안내 가이드가 금방 옛날 버전이 되어 버리는 문제를 해결하기 위해 개발되었습니다. 이전에는 AI로 텍스트 초안만 만들고 영상 제작이나 강의 등록은 일일이 수작업해야 했습니다. Trainn MCP를 연동하면 Claude나 ChatGPT 대화창 안에서 녹화 영상에 AI 음성과 화면 확대 효과를 적용하고, 도움말 문서와 교육 과정까지 한 번에 제작할 수 있습니다. 생성된 모든 결과물은 Trainn 플랫폼에 초안으로 먼저 저장되므로, 사용자가 최종 검토한 뒤 배포할 수 있습니다.</div>
+  <h3>사람들 반응 · 댓글 44개</h3><p style="margin:0 0 6px">채팅창을 벗어나지 않고 고품질 영상과 교육 문서를 한 번에 생성·갱신할 수 있는 MCP 연동 기능에 대해 긍정적인 평가가 많습니다.</p><ul class="good"><li>채팅 기반의 빠른 영상 및 가이드 제작</li><li>제품 변경 시 구버전 콘텐츠 자동 감지 및 갱신</li><li>사용자 검토 중심의 안전한 초안 시스템</li></ul><ul class="bad"><li>무료 플랜과 유료 플랜 간 AI 음성 기능 제한 구분이 모호함</li></ul>
+  <h3>한국 시장</h3><div class="kr">서비스 안내서나 고객 교육용 튜토리얼 영상을 AI 에이전트(MCP) 연동으로 자동 생성하고 갱신해 주는 국내 전용 B2B SaaS 솔루션은 드뭅니다.</div>
+  <p class="price" style="margin-top:12px">생산성 · 인공지능 · 동영상</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/trainn?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/BYPQ26JPIEII6M?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p16">
+ <div class="shots"><img src="https://ph-files.imgix.net/377d9ccd-b71e-49d2-96d4-7c21045f1e11.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/b3bbb02a-a05e-4bc5-b1d1-7ec08e234c60.jpeg?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/60e0222b-0593-424f-9c34-9c4b2ebb957f.jpeg?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>06위 · 11.13</span><span>▲ 추천 149</span><span>💬 댓글 2</span><span class="chip c-모름">모름</span></div>
+  <h2>Gemini 4 Hydrogen</h2>
+  <p class="what">소프트웨어 개발자가 Google AI Studio에서 코드를 입력하거나 디버깅을 요청하면, 여러 단계로 이뤄진 복잡한 코딩 작업을 빠르게 처리해 줍니다. 빠른 속도와 저렴한 토큰 비용 덕분에 길어지는 에이전트 코딩과 오류 수정 작업을 부담 없이 진행할 수 있습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>비용 효율적인 AI 코딩 에이전트</li><li>다단계 디버깅 및 코드 생성</li><li>Google AI Studio 즉시 연동</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">Gemini 4 Hydrogen은 일상적인 코딩 업무를 훨씬 빠르게 처리하기 위해 개발된 구글의 신규 AI 모델입니다. 긴 디버깅 과정이나 여러 단계의 복잡한 개발 작업을 끊김 없이 처리할 수 있도록 성능을 크게 개선했습니다. 구글의 다양한 개발 도구 및 에이전트 프레임워크와 결합하여 개발 생산성을 한층 높여 줍니다.</div>
+  <h3>사람들 반응 · 댓글 2개</h3><p style="margin:0 0 6px">긴 디버깅 작업에서 토큰 비용을 아낄 수 있다는 점에서 1인 개발자들의 관심이 높습니다.</p><ul class="good"><li>저렴한 실행 비용</li><li>빠른 응답 속도 및 다단계 작업 처리</li></ul><ul class="bad"><li>장시간 루프 디버깅 시 실제 정확도 검증 필요</li></ul>
+  <h3>한국 시장</h3><div class="kr">구글의 거대 언어 모델(LLM) 기반 개발 엔진으로, 독자적인 글로벌 기술 특성상 국내 특정 서비스와 1:1로 직접 비교하기는 어렵습니다.</div>
+  <p class="price" style="margin-top:12px">인공지능 · 개발</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/gemini-6?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/A2CQHZMKSW455X?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p17">
+ <div class="shots"><img src="https://ph-files.imgix.net/08745b39-aaba-47ea-a62f-9d10a6a40fc8.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/06763132-e349-415b-a8f3-b6c4f14db863.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/a93292ca-9015-4f12-9d77-57e93bf33424.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>07위 · 11.13</span><span>▲ 추천 117</span><span>💬 댓글 13</span><span class="chip c-드묾">드묾</span></div>
+  <h2>qorqbot</h2>
+  <p class="what">사업자나 프리랜서가 기존에 구독 중인 Claude, Codex 계정을 연동하면 이메일 답장이나 CRM 고객 관리 등의 업무를 백그라운드에서 자동으로 수행합니다. 사용자의 일하는 방식을 스스로 학습하며, 주요 결정이나 외부 승인이 필요한 상황에서만 사용자에게 확인을 요청합니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>기존 AI 구독 연동 (특정 플랫폼 종속 없음)</li><li>백그라운드 자동 업무 처리 및 승인 대기</li><li>사용자 선호도 및 업무 흐름 자동 학습</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">특정 AI 플랫폼의 요금 인상이나 종속성(락인 효과) 부담 없이, 기존 AI 구독 서비스를 활용해 업무 자동화를 구현하고자 제작된 도구입니다. 이메일 답장이나 CRM 관리 같은 단순 반복 업무를 백그라운드에서 처리하다가, 승인이 필요한 주요 순간에만 결재를 요청합니다. 복잡한 지침을 매번 입력하지 않아도 사용자의 대화와 일하는 방식을 습득해 최적화됩니다. 오픈소스 구조라 필요에 따라 자신만의 업무 레이어를 자유롭게 확장할 수도 있습니다.</div>
+  <h3>사람들 반응 · 댓글 13개</h3><p style="margin:0 0 6px">추가 모델 비용 없이 기존 AI 구독을 활용할 수 있고, 백그라운드 작업 시 승인 절차를 둔 안전장치에 긍정적인 반응을 보입니다.</p><ul class="good"><li>기존 AI 구독 재활용으로 비용 절감</li><li>민감한 작업 전 사용자 승인 절차 제공</li><li>백그라운드 자동화 및 개인화 학습</li></ul><ul class="bad"><li>학습 과정에서 원치 않는 습관을 AI가 습득할 위험</li></ul>
+  <h3>한국 시장</h3><div class="kr">기존 AI 구독 서비스를 연동해 백그라운드에서 이메일 답장이나 CRM 관리 등을 처리하고 최종 승인만 받는 방식의 업무 자동화 에이전트는 국내에서 보기 드뭅니다.</div>
+  <p class="price" style="margin-top:12px">개발자 도구</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/qorqbot?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/NYNNNLD7RHSCVR?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p18">
+ <div class="shots"><img src="https://ph-files.imgix.net/launch-image-uploads/18a1deb1-9815-46f4-aa4c-30f9b6ed61dc/c05f5022847c98b8c525fe2569d9144278c91a30f2dcbee82ce4ffc9cfeb0668.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/launch-image-uploads/776f355b-8591-41c8-a161-db1a46b6e392/0258431a622a051d4fd23116ba06748758621f4fb99485f42e408903e01f4056.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/launch-image-uploads/121d3f56-8fb7-4391-8405-176a15a0f63e/b49291a2dd806bf277ca7a0ef7e4605b48a28f8c9e0c8a4a2c5dd87bbc1a556a.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>08위 · 11.13</span><span>▲ 추천 111</span><span>💬 댓글 15</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Ganella</h2>
+  <p class="what">Mac 사용자가 앱을 실행하면, 화면 하단 독(Dock) 아이콘 위치에 음악 플레이어, 구글 카렌다, Xcode 빌드 현황, AI 답변 알림 등이 실시간 위젯으로 표시됩니다. 앱 화면을 일일이 전환하지 않고도 독에서 바로 곡을 넘기거나 브라우저 탭을 찾고 일정을 확인할 수 있습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>앱 아이콘의 실시간 위젯 변환</li><li>클립보드 기록 및 앱 폴더 기능</li><li>디스플레이별 독립 위치 및 스타일 설정</li></ul>
+  <p class="price">가격 · $9.99 (일회성 구매, 7일 무료 체험)</p>
+  <h3>만든 사람의 소개</h3><div class="maker">음악 재생 상태나 다음 미팅 시간 등 단순 정보를 확인하려고 매번 창을 전환해야 하는 번거로움을 해결하고자 개발된 Mac 전용 유틸리티입니다. 자주 쓰는 앱만 라이브 위젯으로 바꾸고 나머지 앱은 일반 아이콘으로 유지하여 깔끔하게 사용할 수 있습니다. Swift 언어로 가볍게 개발되어 하루 종일 켜놓아도 배터리와 시스템 리소스 소모가 거의 없습니다. 가입 절차 없이 7일 동안 무료 체험한 후 1회 결제로 평생 소장할 수 있습니다.</div>
+  <h3>사람들 반응 · 댓글 15개</h3><p style="margin:0 0 6px">창을 바꾸지 않고 독에서 직접 음악을 조작하거나 빌드 상태를 확인할 수 있어 Mac 사용자 및 개발자들에게 훌륭한 생산성 도구로 평가받고 있습니다.</p><ul class="good"><li>독(Dock) 내 실시간 조작 및 정보 확인</li><li>Swift 작성으로 가볍고 적은 배터리 소모</li><li>일반 아이콘과 위젯의 조화로운 배치</li></ul><ul class="bad"><li>앱 업데이트 시 위젯 연동 단절 가능성 우려</li></ul>
+  <h3>한국 시장</h3><div class="kr">macOS 기본 독(Dock)을 라이브 위젯 형태로 개조해 생산성을 끌어올리는 맥 전용 유틸리티 분야는 국내 개발 생태계에서 매우 드뭅니다.</div>
+  <p class="price" style="margin-top:12px">Mac · 생산성 · 개발자 도구</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/ganella?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/723AUCMMDVZ3TU?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p19">
+ <div class="shots"><img src="https://ph-files.imgix.net/684f4adc-4202-4a5c-aaa7-da620d9bfb4b.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/7c678da2-9494-416b-a628-a241f7201da2.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/ce3b2aa7-1b91-4dff-b0bf-09006594794e.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>09위 · 11.13</span><span>▲ 추천 109</span><span>💬 댓글 24</span><span class="chip c-있음">있음</span></div>
+  <h2>Paxper</h2>
+  <p class="what">클라우드 엔지니어나 팀이 캔버스 위에 AWS 서버와 네트워크 자원을 그리고 서로 연결하면, 해당 인프라 코드가 자동 생성되어 실제 AWS 계정에 적용됩니다. 변경 사항을 적용하기 전에 예상 비용과 변경 차이(Diff)를 미리 검토할 수 있어 과도한 요금 청구나 구성 실수를 방지할 수 있습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>시각적 다이어그램 기반 인프라 설계</li><li>리소스별 예상 비용 즉시 확인</li><li>AWS 계정 반영 전 변경 사항 다이어그램 검토</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">클라우드 아키텍처 정보가 특정 담당자에게만 파편화되어 있고, 명확하지 않은 설정 변경 때문에 예기치 않은 AWS 청구서를 받게 되는 문제를 해결하고자 개발되었습니다. 복잡한 텍스트 코드를 작성할 필요 없이 다이어그램을 그리듯 시스템 구조와 예상 요금을 한눈에 확인할 수 있습니다. 실제 계정에 배포하기 전 팀원들과 다이어그램 변경 사항 및 비용을 함께 검토할 수 있어, 팀 전체가 안정적이고 신속하게 클라우드 환경을 구축할 수 있게 지원합니다.</div>
+  <h3>사람들 반응 · 댓글 24개</h3><p style="margin:0 0 6px">인프라를 변경하기 전 예상 비용과 구성 차이를 미리 검토할 수 있어 불필요한 클라우드 비용 낭비를 막아준다는 점에 긍정적인 반응을 얻고 있습니다.</p><ul class="good"><li>배포 전 AWS 예상 청구 비용 확인</li><li>다이어그램 기반의 쉬운 인프라 검토</li><li>AWS 콘솔 접속 없이 직관적 구성</li></ul><ul class="bad"><li>기존 AWS/Terraform 자산의 자동 불러오기 지원 여부 궁금</li></ul>
+  <h3>한국 시장</h3><div class="kr">클라우드 아키텍처를 다이어그램으로 시각화하고 IaC(코드형 인프라)로 변환·관리해 주는 국내 서비스로는 클라우드클럽(CloudClub) 등이 있습니다.</div>
+  <p class="price" style="margin-top:12px">디자인 도구 · SaaS · 인공지능</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/paxper?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/AHT6BFH3RQ27QR?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p20">
+ <div class="shots"><img src="https://ph-files.imgix.net/3ad08987-b08d-4f4d-9478-8b7408a448b7.jpeg?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/49ecf724-839f-4377-b4d9-f83ff714c4e6.jpeg?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/00c5190d-7b41-41a6-ae7c-4757e07e277e.webp?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>10위 · 11.13</span><span>▲ 추천 107</span><span>💬 댓글 4</span><span class="chip c-있음">있음</span></div>
+  <h2>Google Pixel Tag</h2>
+  <p class="what">열쇠고리나 지갑, 가방 등에 이 소형 태그를 달아 두면 소지품을 잃어버렸을 때 구글 기기 네트워크를 통해 위치를 바로 찾을 수 있습니다. 거꾸로 태그 버튼을 두 번 누르면 무음으로 설정된 안드로이드 스마트폰에서 소리가 울려 휴대폰 위치를 파악할 수도 있습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>구글 Find Hub 네트워크 기반 위치 추적</li><li>스마트폰 찾기 (태그 이중 클릭)</li><li>1년 이상 지속되는 교체형 배터리</li></ul>
+  <p class="price">가격 · $29.99</p>
+  <h3>만든 사람의 소개</h3><div class="maker">구글이 애플 에어태그(AirTag)에 맞춰 정식 선보인 안드로이드 전용 위치 추적 태그입니다. 전 세계 10억 대가 넘는 안드로이드 기기 네트워크를 활용해 가방이나 열쇠 등 분실물의 위치를 정밀하게 찾아 줍니다. 지갑에 넣기 좋은 슬림한 방수 디자인을 갖췄으며, 1년 이상 쓸 수 있는 교체형 배터리를 탑재했습니다. 특히 무음 모드로 해둔 스마트폰도 태그 버튼을 두 번 눌러 벨소리를 울려 찾을 수 있어 유용합니다.</div>
+  <h3>사람들 반응 · 댓글 4개</h3><p style="margin:0 0 6px">29.99달러라는 부담 없는 가격과 역방향 스마트폰 찾기 기능은 좋은 평가를 받고 있지만, 충전식이 아닌 배터리 교체형 방식에는 아쉽다는 반응이 있습니다.</p><ul class="good"><li>30달러 수준의 합리적인 가격</li><li>태그 버튼 클릭으로 무음 스마트폰 찾기</li><li>슬림한 방수 디자인</li></ul><ul class="bad"><li>충전식 배터리 미지원 (일회성 배터리 폐기물 우려)</li></ul>
+  <h3>한국 시장</h3><div class="kr">삼성전자의 &#x27;갤럭시 스마트태그(Galaxy SmartTag)&#x27;가 대표적인 안드로이드 기반 위치 추적 기기로 국내에서 널리 쓰이고 있습니다.</div>
+  <p class="price" style="margin-top:12px">안드로이드 · 하드웨어 · 액세서리</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/google?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/SOWQ42MOQPLT26?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article><div class="day">11.14 · 미국 서부</div>
+<article id="p21">
+ <div class="shots"><img src="https://ph-files.imgix.net/786f9aa5-bb67-417a-a44e-2cce5b5c021c.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/488924c4-c390-47a6-abd7-2b785477d077.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/4cbd3e9c-3074-4fc6-815e-ca3c02807c7e.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>01위 · 11.14</span><span>▲ 추천 302</span><span>💬 댓글 28</span><span class="chip c-드묾">드묾</span></div>
+  <h2>HiringNow</h2>
+  <p class="what">취업 준비생이 프로필을 미리 입력해 두면 24만여 개 기업의 채용 사이트를 실시간으로 확인해 서류 제출까지 알아서 처리해 주는 서비스입니다. 공고 맞춤형 이력서 작성부터 지원 현황 관리, 모의 면접 대비까지 구직 전 과정을 대행합니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>기업 채용 사이트 실시간 감시</li><li>맞춤 이력서 생성 및 자동 지원</li><li>지원 내역 추적 및 모의 면접</li></ul>
+  <p class="price">가격 · 무료 플랜(자동 지원 10회), 유료 플랜 월 $29부터</p>
+  <h3>만든 사람의 소개</h3><div class="maker">주요 채용 사이트에 공고가 뜰 때쯤이면 이미 수백 명이 지원을 끝낸 뒤라 빠른 대응이 관건입니다. HiringNow는 5분 간격으로 기업 채용 페이지를 확인해 남들보다 한발 앞서 공고를 찾고, 사용자 맞춤 서류를 만들어 줍니다. 서류 제출 전 반드시 본인 승인을 거치므로 안심하고 이용할 수 있으며, 이력서 생성과 모의 면접 기능도 제공합니다.</div>
+  <h3>사람들 반응 · 댓글 28개</h3><p style="margin:0 0 6px">실시간 채용 모니터링과 이력서 맞춤화 기능에 대한 호평이 많으며, 자동 제출 전 승인 단계가 있어 신뢰할 수 있다는 반응입니다.</p><ul class="good"><li>공고 감시 및 빠른 지원 속도</li><li>제출 전 사용자 승인 단계 제공</li><li>반복적인 지원 서류 작성 수고 경감</li></ul><ul class="bad"><li>실제 지원 성공률 데이터 검증 필요</li><li>사용자 개인 API 키 활용 미지원</li></ul>
+  <h3>한국 시장</h3><div class="kr">공고 실시간 감시부터 서류 맞춤 작성, 자동 지원까지 전담하는 AI 구직 에이전트는 국내에서 보기 드뭅니다. 서류 준비 시간을 절약하고 싶은 구직자를 위한 서비스로 시장성이 있습니다.</div>
+  <p class="price" style="margin-top:12px">생산성 · 인공지능 · 커리어</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/hiringnow?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/WSO7S2YHKPGAXY?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p22">
+ <div class="shots"><img src="https://ph-files.imgix.net/e36a2bd0-b98b-4e67-86dd-343879e6f30a.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/5d4d3289-bbd8-436e-816e-074911225a03.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/ad3030c7-d16d-4d56-b6f7-60a5e50d8edc.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>02위 · 11.14</span><span>▲ 추천 219</span><span>💬 댓글 8</span><span class="chip c-있음">있음</span></div>
+  <h2>Businesses in ChatGPT</h2>
+  <p class="what">기업이나 매장 운영자가 자사 프로필을 등록하면 ChatGPT 대화창에 비즈니스 정보가 우선 노출되도록 돕는 도구입니다. 고객이 매장을 발견한 경로와 유입 데이터를 분석해 주며, AI 고객 응대 에이전트까지 손쉽게 만들어 줍니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>비즈니스 프로필 소유권 관리</li><li>ChatGPT 유입 인사이트 분석</li><li>비즈니스 에이전트 생성</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">AI의 발전으로 사람들이 매장이나 서비스를 검색하고 선택하는 방식이 달라지고 있습니다. OpenAI는 기업이 ChatGPT 내부의 노출 방식을 직접 제어하고 잠재 고객을 확보할 수 있는 전용 도구를 선보였습니다. 프로필 관리부터 유입 분석, AI 에이전트 생성 기능까지 갖춰 최신 AI 검색 환경에 효율적으로 대응하도록 돕습니다.</div>
+  <h3>사람들 반응 · 댓글 8개</h3><p style="margin:0 0 6px">지역 비즈니스의 새로운 노출 채널로 기대를 모으고 있으나, 초기 본인 인증 실패 등의 오류 해결이 요구됩니다.</p><ul class="good"><li>ChatGPT 내 브랜드 노출 직접 관리</li><li>검색 질문 및 유입 인사이트 확인</li></ul><ul class="bad"><li>본인 인증 실패 시 재신청 절차 부재</li><li>견적 요청 직접 수신 기능 미비</li></ul>
+  <h3>한국 시장</h3><div class="kr">네이버 스마트플레이스처럼 AI 대화창 내 사업자 프로필 관리와 유입 분석을 제공하는 마케팅 관리 서비스입니다.</div>
+  <p class="price" style="margin-top:12px">분석 · 마케팅 · 인공지능</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/openai?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/4GOWHK6UYKH5KX?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p23">
+ <div class="shots"><img src="https://ph-files.imgix.net/ba87a49e-64a9-4972-9c1a-e9f933738dfc.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/12884e12-01bf-4f5e-b7fa-8e646314a962.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/a8e55ca3-8753-458d-ab20-23d1f1765ec9.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>03위 · 11.14</span><span>▲ 추천 208</span><span>💬 댓글 33</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Dex Semantics</h2>
+  <p class="what">데이터 모델에 계산 규칙이나 전제 조건을 코드로 미리 명시해, AI가 왜곡 없이 정확한 분석 보고서를 작성하도록 돕는 서비스입니다. 외부 프로그램 없이 코드 자체에 수치 정의를 기술하므로 AI의 연산 오류나 잘못된 결론을 사전에 방지합니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>분석 모델 내 규칙 선언문 작성</li><li>AI 에이전트 분석 오류 감소</li><li>시맨틱 레이어 자동 전환 지원</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">잘못된 데이터 가정이나 계산 오류는 기업 규모에 상관없이 치명적인 손실을 부릅니다. 최근 AI 에이전트 도입으로 데이터 처리 속도가 빨라지면서 분석 오류 위험성도 한층 커졌습니다. Dex Semantics는 별도 도구 없이 데이터 모델 내부 코드로 수치 정의와 전제 조건을 관리해, AI가 신뢰도 높은 분석 결과를 내놓도록 돕습니다.</div>
+  <h3>사람들 반응 · 댓글 33개</h3><p style="margin:0 0 6px">데이터 모델 코드 옆에 명확한 계산 정의를 유지하여 SQL 쿼리를 최적화하고 AI 분석 오류를 줄이는 방식에 많은 개발자가 공감했습니다.</p><ul class="good"><li>코드 기반의 직관적인 메트릭 정의</li><li>AI 에이전트의 데이터 분석 정확도 향상</li></ul><ul class="bad"><li>데이터베이스 변경 시 선언문 자동 갱신 여부 확인 필요</li></ul>
+  <h3>한국 시장</h3><div class="kr">AI 에이전트의 데이터 분석 오류를 줄이기 위해 데이터 모델에 의미 구조(시맨틱)를 코드 수준에서 정의하는 개발 도구는 국내에 드뭅니다.</div>
+  <p class="price" style="margin-top:12px">분석 · 개발자 도구 · GitHub</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/dex-by-exmergo?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/RZIMECXI6OYCNP?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p24">
+ <div class="shots"><img src="https://ph-files.imgix.net/8ea83902-d7e1-4cf6-b620-1c90ad2b28f1.webp?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/1c4b5b30-0ac9-4a15-b52a-1ce5ceccd3a2.webp?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/6fc52fb7-92cc-4b7f-a2e3-84c1dd0776bb.webp?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>04위 · 11.14</span><span>▲ 추천 166</span><span>💬 댓글 3</span><span class="chip c-모름">모름</span></div>
+  <h2>Gemini Robotics 2.5</h2>
+  <p class="what">로봇 제작자나 엔지니어가 기기에 적용할 수 있는 시각·언어 인지 기반 AI 모델입니다. 카메라 영상을 해석하고 음성 명령을 이해해 로봇의 손발을 정교하게 제어합니다. 음식을 집거나 옷을 접는 섬세한 동작부터 공장의 부품 분류까지 다양한 유형의 로봇에서 작업 속도와 정확도를 크게 높여 줍니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>시각·언어 인지 기반 로봇 제어</li><li>실시간 장애물 회피 및 안전 가이드</li><li>다양한 로봇 기종 호환</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">Gemini Robotics 2.5는 복잡한 현실 환경에서 로봇이 섬세한 작업 능력을 빠르게 습득하도록 설계된 최신 로봇 AI 모델입니다. 이전보다 작업 성공률과 처리 속도가 크게 올라갔으며, 200여 개의 미세 조작 테스트를 통과했습니다. 메르세데스-벤츠 실제 공장 라인에서 96%의 분류 성공률을 올렸을 뿐 아니라, 인근 작업자나 장애물을 실시간 회피하는 안전성까지 대폭 증대되었습니다.</div>
+  <h3>사람들 반응 · 댓글 3개</h3><p style="margin:0 0 6px">현실 세계의 정교한 물체 조작 성공률이 대폭 향상된 점과 실시간 안전 회피 기능 탑재에 대한 기대감이 높습니다.</p><ul class="good"><li>실시간 장애물 및 인접 사람 회피 안전 기능</li><li>어려운 조작 작업의 성공률 비약적 상승</li></ul><ul class="bad"><li>소형 장난감 등 초소형 기기 탑재 가능 여부 미확인</li></ul>
+  <h3>한국 시장</h3><div class="kr">구글 딥마인드가 개발한 거대 로봇 제어 AI 모델(VLA)로, 기초 첨단 기술 영역에 해당하여 단순 서비스 간 비교가 어렵습니다.</div>
+  <p class="price" style="margin-top:12px">인공지능 · GitHub · YouTube</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/gemini-robotics-2-5?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/7TJIY2TFO3PDX3?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p25">
+ <div class="shots"><img src="https://ph-files.imgix.net/16f5e683-fb03-4974-8665-da8d9502be1e.webp?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/329cd65e-84b7-454b-ba31-059773cac0a2.webp?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/98da9a3e-69dd-459f-9427-c5f2de15fdce.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>05위 · 11.14</span><span>▲ 추천 133</span><span>💬 댓글 5</span><span class="chip c-있음">있음</span></div>
+  <h2>Blender 5.3</h2>
+  <p class="what">3D 디자이너와 영상 창작자가 실사 사진이나 비디오 기반의 3D 공간 데이터를 프로그램 내에서 바로 편집·렌더링하도록 돕는 오픈소스 그래픽 소프트웨어입니다. 엔비디아(NVIDIA) GPU를 활용한 노이즈 제거 기능과 프로젝트 파일·에셋을 한눈에 정리하는 관리 체계를 갖췄습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>3D 가우시안 스플랫 기본 렌더링</li><li>DLSS 4.5 뷰포트 노이즈 제거</li><li>프로젝트 및 자산 정리 시스템</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">Blender 5.3 업데이트로 실사 사진이나 비디오를 촬영해 만든 3D 공간 데이터(가우시안 스플랫)를 외부 도구 없이 곧바로 불러와 기존 3D 오브젝트와 함께 편집·렌더링할 수 있습니다. 엔비디아 GPU 기반 DLSS 4.5 노이즈 제거로 뷰포트 화면을 한결 깨끗하고 빠르게 선명화합니다. 작업 파일과 환경 설정을 구조화해 주는 프로젝트 시스템과 오브젝트 순서를 마음대로 배치할 수 있는 아웃라이너 정렬 기능도 도입되었습니다.</div>
+  <h3>사람들 반응 · 댓글 5개</h3><p style="margin:0 0 6px">별도 외부 프로그램 없이 실사 스캔 데이터와 기존 3D 파이프라인을 융합해 작업할 수 있게 되어 매우 긍정적인 평가를 받고 있습니다.</p><ul class="good"><li>실사 캡처 데이터의 3D 파이프라인 직접 통합</li><li>아웃라이너 내 객체 자유 정렬 지원</li></ul><ul class="bad"><li>스플랫 내부 조명 재계산 시 기존 조명과의 매칭 난이도</li><li>스플랫 데이터를 정밀 3D 메시로 변환하는 기능의 미비</li></ul>
+  <h3>한국 시장</h3><div class="kr">전 세계적으로 널리 활용되는 오픈소스 3D 창작 소프트웨어 Blender의 신규 버전 업데이트입니다.</div>
+  <p class="price" style="margin-top:12px">디자인 도구 · 3D 모델링</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/blender?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/AXLLXTVWQ7BDDM?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p26">
+ <div class="shots"><img src="https://ph-files.imgix.net/launch-image-uploads/8013614c-3ce1-47fa-91df-384549d5375c/54a0b1cf1809f6e215b740f8bc723fe0994e0b01b5cff3b9c1a2fd46eb8bd0f5.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/launch-image-uploads/93f00b4e-c7bd-4d11-9af1-2393cbf73819/475f3927312114cce9c4e5d6ac694a441ec563129facbce295c4bd700a8e0028.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/launch-image-uploads/c7e58dee-fa44-43e1-bbc6-1ef67e44b4eb/4fd92cb6943014786bd4809a6072fc0c7eeaf87d67448dbce525eb2cdc37cc05.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>06위 · 11.14</span><span>▲ 추천 128</span><span>💬 댓글 12</span><span class="chip c-드묾">드묾</span></div>
+  <h2>HuntMonitor</h2>
+  <p class="what">Product Hunt에 신제품을 등록한 창업자나 마케터가 득점 현황과 투표 속도, 댓글 반응을 실시간 관찰하도록 돕는 대시보드 서비스입니다. 제품별 투표 획득 추이를 시간대별 그래프로 시각화하고 15분 주기로 스냅샷을 찍어 순위 변동을 명확히 보여줍니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>실시간 순위 및 추천 속도 추적</li><li>시간대별 투표 변동 차트 제공</li><li>15분 간격 스냅샷 저장 및 반영</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">Product Hunt의 열렬한 유저가 Netlify의 최신 기술과 API를 이용해 만든 실시간 모니터링 도구입니다. 웹 페이지를 매번 새로고침하지 않아도 브라우저 탭을 열어둔 채 제품 순위 변화를 실시간으로 살필 수 있습니다. 시간당 투표 수집 속도를 파악할 수 있는 &#x27;Speed&#x27; 탭을 활용하면 실시간 급상승 중인 주목할 만한 신규 제품도 한눈에 파악할 수 있습니다.</div>
+  <h3>사람들 반응 · 댓글 12개</h3><p style="margin:0 0 6px">깔끔하고 단순한 UI와 런칭 당일 실시간 투표 획득 속도(Speed) 및 점수 그래프를 추적할 수 있어 유용하다는 반응입니다.</p><ul class="good"><li>단순하고 직관적인 실시간 대시보드</li><li>시간당 투표 획득 속도 정렬 제공</li><li>일자별·시간별 점수 변동 차트 지원</li></ul><ul class="bad"><li>초기 4시간 투표 숨김 제한 우회 여부에 대한 질문</li></ul>
+  <h3>한국 시장</h3><div class="kr">디스콰이엇 등 한국 서비스 런칭 커뮤니티용 순위 및 득점 속도를 실시간 추적해 주는 전문 대시보드는 드뭅니다.</div>
+  <p class="price" style="margin-top:12px">생산성 · 분석 · 테크</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/huntmonitor?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/QPB2D4QRGA3BW4?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p27">
+ <div class="shots"><img src="https://ph-files.imgix.net/e961708c-c0bc-4870-a760-735ac6f22cbf.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/721333e5-503f-43e1-8ffa-214035172848.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/3e9b388c-fbd3-4104-9193-1c521924a4c8.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>07위 · 11.14</span><span>▲ 추천 105</span><span>💬 댓글 18</span><span class="chip c-있음">있음</span></div>
+  <h2>CaptureFlow</h2>
+  <p class="what">모니터 화면과 웹캠, 마이크 음성을 녹화해 단 몇 초 만에 공유용 링크로 전환해 주는 오픈소스 도구입니다. AI 에이전트 연동 프로토콜(MCP)을 지원해, 코딩 AI가 스스로 데모 영상을 캡처하고 깃허브 이슈나 PR에 해당 링크를 자동 첨부할 수 있습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>화면·웹캠 녹화 및 즉시 공유 링크</li><li>영상 자막·요약 및 구간 댓글</li><li>AI 에이전트(MCP) 자동 녹화 기능</li></ul>
+  <p class="price">가격 · captureflow.dev 이용 시 25회 녹화 무료, Light 월 $5 / Pro 월 $12 (녹화 작성자 기준 결제). 셀프 호스팅 무료.</p>
+  <h3>만든 사람의 소개</h3><div class="maker">긴 글 대신 짧은 동영상 링크 하나로 버그 신고나 신기능 데모를 신속히 공유할 수 있는 오픈소스 비디오 녹화 솔루션입니다. 영상을 편집해도 기존 공유 링크가 유지되며 자막 생성, 요약, 구간별 댓글 작성 기능까지 알차게 갖췄습니다. MCP 서버 연동으로 코딩 AI가 화면을 녹화해 깃허브에 올릴 수도 있으며, 인프라 내 자체 구축(셀프 호스팅)도 지원합니다.</div>
+  <h3>사람들 반응 · 댓글 18개</h3><p style="margin:0 0 6px">Loom의 훌륭한 오픈소스 대안이자 개발용 AI 에이전트가 스스로 녹화해 깃허브 PR에 올려주는 기능에 높은 호응을 보였습니다.</p><ul class="good"><li>자체 서버 구축이 가능한 오픈소스 도구</li><li>AI 에이전트(MCP) 기반 데모 자동 녹화</li><li>깃허브 내 영상 즉시 재생 지원</li></ul><ul class="bad"><li>영상 시청자의 댓글 작성 시 계정 필요 여부 질의</li></ul>
+  <h3>한국 시장</h3><div class="kr">Loom(룸)이나 올인원 화면 녹화 도구와 유사한 서비스로, AI 에이전트 자동 녹화와 셀프 호스팅 기능을 차별점으로 내세운 도구입니다.</div>
+  <p class="price" style="margin-top:12px">Chrome 확장 프로그램 · 생산성 · 오픈소스</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/captureflow?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/STO327RY5SWEKS?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p28">
+ <div class="shots"><img src="https://ph-files.imgix.net/3620dc92-ec90-4d22-84db-c7d9802e2045.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/ecd56b3a-80c5-4062-82f4-282fd066dea5.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/54ea1dfb-7c29-4a8d-83f9-1e918471aa47.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>08위 · 11.14</span><span>▲ 추천 101</span><span>💬 댓글 6</span><span class="chip c-드묾">드묾</span></div>
+  <h2>Kokonut UI</h2>
+  <p class="what">Cursor, Claude Code 같은 코딩 AI에게 인터페이스 제작을 지시할 때 곧바로 쓸 수 있도록 구성된 100여 개의 리액트 웹 UI 컴포넌트 팩입니다. MCP 연동 방식을 채택해 AI 에이전트가 원하는 부품을 직접 검색하고 개발자의 소스 코드에 자동 설치하도록 만들었습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>AI 코딩 에이전트(MCP) 자동 설치</li><li>AI 대화 및 승인 전용 UI 부품</li><li>100% 오픈소스(MIT 라이선스) 제공</li></ul>
+  <p class="price">가격 · 무료 (MIT 라이선스)</p>
+  <h3>만든 사람의 소개</h3><div class="maker">개발자가 수동으로 템플릿 코드를 복사·붙여넣기 하던 방식을 벗어나, AI에게 말로 UI 작성을 지시하는 트렌드에 맞춰 Kokonut UI를 전면 개편했습니다. 자연어 명령만 내리면 AI가 MCP 프로토콜로 컴포넌트를 찾아 프로젝트 소스에 적용해 줍니다. AI 함수 호출 카드, 코드 변경 검수 창, 실행 승인 패널 등 AI 애플리케이션 개발에 특화된 전용 UI 요소들이 다수 포함되어 있습니다.</div>
+  <h3>사람들 반응 · 댓글 6개</h3><p style="margin:0 0 6px">AI 앱 제작 시 구현하기 까다로운 도구 호출 및 승인 UI가 미리 준비되어 있다는 점과 AI가 직접 라이브러리를 검색해 설치하는 구조에 칭찬이 많았습니다.</p><ul class="good"><li>AI 서비스 특화 UI 컴포넌트 제공</li><li>MCP 기반의 에이전트 자동 검색 및 설치</li><li>세련된 애니메이션 및 디자인 완성도</li></ul>
+  <h3>한국 시장</h3><div class="kr">shadcn/ui 같은 컴포넌트 킷은 많으나, 코딩 AI 에이전트(MCP)가 스스로 검색하고 코드를 설치하도록 특화된 오픈소스 UI 라이브러리는 국내외에 드뭅니다.</div>
+  <p class="price" style="margin-top:12px">오픈소스 · 개발자 도구 · 인공지능</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/kokonutui?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/WBXQ3VO2K7G57E?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p29">
+ <div class="shots"><img src="https://ph-files.imgix.net/e09a2fb9-02fe-4742-bea1-3b876e7d8288.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/5c598678-6eda-4cd7-831a-bfeb64763683.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/5be8fe28-7909-43d6-84ba-c732bd6df02b.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>09위 · 11.14</span><span>▲ 추천 97</span><span>💬 댓글 3</span><span class="chip c-있음">있음</span></div>
+  <h2>Uber Parking</h2>
+  <p class="what">목적지와 이용할 시간을 지정하면 주변 주차장의 위치와 금액을 비교하고 사전에 자리를 예약해 결제하는 우버 앱 내 통합 주차 서비스입니다. 번호판 자동 인식이나 QR 코드로 손쉽게 입출차하며, 일정이 길어질 경우 앱에서 즉시 주차 시간을 늘릴 수 있습니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>앱 내 주차장 위치 및 가격 비교</li><li>번호판 인식 및 QR 코드 자동 입차</li><li>주차 시간 실시간 앱 연장</li></ul>
+  
+  <h3>만든 사람의 소개</h3><div class="maker">우버가 인수한 스팟히어로(SpotHero)의 주차 네트워크를 접목해 우버 앱 안에서 주차 공간 사전 예약 서비스를 정식으로 선보였습니다. 이로써 우버 애플리케이션 하나만으로 택시 호출, 배달 음식 주문, 자가용 주차장 예약까지 모빌리티 전반을 아우르게 되었습니다. 미국·캐나다 400여 개 도시 13,000개 이상의 주차 네트워크를 확보했으며, Uber One 회원은 결제액의 10%를 포인트로 되돌려받습니다.</div>
+  
+  <h3>한국 시장</h3><div class="kr">카카오 T 앱 하나로 이동 수단 호출부터 카카오 T 주차 예약까지 처리하는 모빌리티 통합 서비스와 동일한 형태입니다.</div>
+  <p class="price" style="margin-top:12px">승차 공유 · 여행 · 지도</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/uber?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/KFS3PL2NO44MH4?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article>
+<article id="p30">
+ <div class="shots"><img src="https://ph-files.imgix.net/launch-image-uploads/bbf15b54-b868-4fa5-b458-18347f73f7b9/956258ebf866fc8464202a4fb391d04f3a6b041eee65d26019edb1e59462f735.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/launch-image-uploads/c2e831d3-906c-40e4-8000-30bf50255750/d01ed04e483ff8291bacc6053a4471fe509e7b8cb3c1e37cb8e5473134d02a25.png?auto=format" alt="" loading="lazy"><img src="https://ph-files.imgix.net/launch-image-uploads/539babe6-1cde-41f8-84a1-8167f8433890/459caa4cff012476edf6e8d121270caa63dd4815cf525683d652c6502c94b99d.png?auto=format" alt="" loading="lazy"></div>
+ <div class="body">
+  <div class="meta"><span>10위 · 11.14</span><span>▲ 추천 97</span><span>💬 댓글 9</span><span class="chip c-있음">있음</span></div>
+  <h2>Remindly</h2>
+  <p class="what">노트 작성과 시간·위치 기반 알림(리마인더) 기능을 통합해, 기록해 둔 내용을 잊지 않고 챙기도록 도와주는 스마트 메모 앱입니다. 타이핑, 음성, 스캔 등 편한 방식으로 작성할 수 있으며, 앤트로픽의 Claude AI와 연동하여 메모 작성 및 알림 생성을 자동화해 줍니다.</p>
+  <h3>주요 기능</h3><ul class="feat"><li>메모 결합형 시간 및 장소 알림</li><li>음성·스캔·웹 클리퍼 빠른 기록</li><li>에버노트 데이터 불러오기 지원</li></ul>
+  <p class="price">가격 · 기본 무료, Pro 플랜 런칭 할인 코드 적용 시 연 $29</p>
+  <h3>만든 사람의 소개</h3><div class="maker">메모 앱과 알림 앱이 이원화되어 있어 정작 메모해 둔 내용을 제때 보지 못하는 불편을 풀고자 Remindly를 개발했습니다. 메모마다 반복 시간이나 위치 기준 알림을 매칭해 알림 창이 뜰 때 노트 내용까지 한꺼번에 확인할 수 있습니다. Claude AI와 연동해 요리 레시피 같은 단계별 가이드 및 알림을 자동 생성하며, 기존 Evernote 데이터도 간편히 이관할 수 있습니다.</div>
+  <h3>사람들 반응 · 댓글 9개</h3><p style="margin:0 0 6px">메모와 알림이 한곳에 묶여 유실을 막아주며, 오프라인 시에도 작동하는 장소 알림에 대한 호평이 이어졌습니다.</p><ul class="good"><li>메모와 알림의 결합으로 노트 유실 방지</li><li>인터넷 연결이 없는 오프라인 상태 동작</li><li>특정 장소 도착 시 발동하는 위치 알림</li></ul><ul class="bad"><li>Evernote 데이터 이전 시 기존 알림 유지 여부 질문</li></ul>
+  <h3>한국 시장</h3><div class="kr">네이버 메모나 Apple 메모처럼 메모 작성 시 시간 및 위치 기반 알림을 함께 지정하는 생산성 메모 서비스입니다.</div>
+  <p class="price" style="margin-top:12px">Mac · 생산성 · 메모</p>
+  <div class="btns"><a class="main" href="https://www.producthunt.com/products/remindly-6?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">Product Hunt 원문</a><a href="https://www.producthunt.com/r/74WWDRRLYFAEJU?utm_campaign=producthunt-api&amp;utm_medium=api-v2&amp;utm_source=Application%3A+Auto_PH+%28ID%3A+307330%29" target="_blank" rel="noopener">서비스 사이트</a></div>
+ </div>
+</article></main>
+<footer><div class="wrap"><a href="index.html">지난 브리핑 보기</a> · Auto_PH · 개인 용도</div></footer>
+</body></html>
